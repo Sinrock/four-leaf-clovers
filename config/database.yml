@@ -5,7 +5,7 @@ default: &default
   host: localhost
   username: postgres
   password: trinity19
-  #port: 5434
+  port: 5432
 
 development:
   <<: *default
@@ -13,7 +13,7 @@ development:
   username: postgres
   password: trinity19
   host: localhost
-  #port: 5434
+  port: 5432
 
 test:
   <<: *default
