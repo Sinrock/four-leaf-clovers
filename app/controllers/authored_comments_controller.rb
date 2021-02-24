@@ -1,0 +1,2 @@
+class AuthoredCommentsController < ApplicationController
+end
