@@ -1,33 +1,27 @@
-<h1>Signup Page</h1>
+<h1>Create Your Account Below To Join Our Community!</h1>
 
 <%= form_for(@user) do |f|%>
-  <%= f.label :username %>
+  <%= f.label :"Desired User Name:" %>
   <%= f.text_field :user_name %>
-
-  <%= f.label :password %>
+    <br>
+  <%= f.label :"Password:" %>
   <%= f.password_field :password %>
-
-  <%= f.label :email %>
+    <br>
+  <%= f.label :"E-mail:" %>
   <%= f.email_field :email %>
-
-  <%= f.label :first_name %>
+    <br>
+  <%= f.label :"Your First Name:" %>
   <%= f.text_field :first_name %>
-
-  <%= f.label :last_name %>
+    <br>
+  <%= f.label :"Your Last Name" %>
   <%= f.text_field :last_name %>
-
-  <%= f.label :affected_person %>
+    <br>
+  <%= f.label :"Person With Cloves:" %>
   <%= f.text_field :affected_person %>
-
-  <%= f.label :location %>
+    <br>
+  <%= f.label :"Location (do NOT be exact please! ):" %>
   <%= f.text_field :location %>
-
-  <%= f.label :email %>
-  <%= f.email_field :email %>
-
-  <%= f.label :password %>
-  <%= f.password_field :password %>
-
+    <br>
   <%= f.submit "Sign Up" %>
 
 <% end %>
