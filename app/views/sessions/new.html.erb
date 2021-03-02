@@ -1,6 +1,6 @@
 <h1>Log In Below To Join Us!</h1>
 
-<%= form_with(url: '/login') do |f| %>
+<%= form_for(:user) do |f| %>
 <%= f.label :"E-mail" %>
 <%= f.email_field :email %>
 <br>

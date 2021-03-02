@@ -6399,3 +6399,228 @@ No template found for SessionsController#create, rendering head :no_content
 Completed 204 No Content in 19ms (ActiveRecord: 1.1ms)
 
 
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."user_name" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.5ms)[0m  [1m[31mROLLBACK[0m
+Started GET "/login" for 127.0.0.1 at 2021-03-01 22:04:30 -0700
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/mike/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 232ms (Views: 226.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2021-03-01 22:04:34 -0700
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 59ms (Views: 28.8ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-03-01 22:04:38 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 36ms (Views: 34.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-03-01 22:04:39 -0700
+Processing by SessionsController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Iob7owBZ+jasqVizTwNS2Z7vYnT/8JcOwryllKnowIgj4ckdGWn4vjGAjc6qJYrzEW494yJM3/5AlAZPHIhcLQ==", "email"=>"mruhaak@gmail.com", "password"=>"[FILTERED]", "commit"=>"Log Me In!"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "mruhaak@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:10
+No template found for SessionsController#create, rendering head :no_content
+Completed 204 No Content in 19ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2021-03-01 22:04:50 -0700
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 35ms (Views: 33.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2021-03-01 22:05:42 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vWA+TvlPUh1Cumi+GrJc7LA/mAIbPkxmlkcBZfI1P+tva8CEc7RbxVnUtnO14izfFnM0p+hiKJ6PGftAQ3+hZA==", "user"=>{"user_name"=>"Mike", "password"=>"[FILTERED]", "email"=>"mruhaak@protonmail.com", "first_name"=>"Michael", "last_name"=>"Ruhaak", "affected_person"=>"Daughter - Leah", "location"=>"Colorado"}, "commit"=>"Sign Up"}
+Unpermitted parameters: :email, :first_name, :last_name, :affected_person, :location
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:13
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."user_name" = $1 LIMIT $2[0m  [["user_name", "Mike"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:13
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 299ms (Views: 24.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-01 22:06:08 -0700
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 27ms (Views: 26.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-03-01 22:06:10 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 27ms (Views: 25.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-03-01 22:06:27 -0700
+Processing by SessionsController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"COBOEYnHWCmzO4a9ty4Ecsc+23B55TAScXj/tcxqqAcJh3yvkPdaoS4SU8BSCNxYSL+E56RZeOLzUFxueQo0og==", "email"=>"mruhaak@protonmail.com", "password"=>"[FILTERED]", "commit"=>"Log Me In!"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "mruhaak@protonmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:10
+No template found for SessionsController#create, rendering head :no_content
+Completed 204 No Content in 18ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-01 22:06:38 -0700
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 28ms (Views: 26.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-03-01 22:14:43 -0700
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/mike/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 244ms (Views: 236.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-03-01 22:14:59 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gUEn/pQYYxb15y/Z+iaW6NwVuLnlEGNzpjFHdMz+VEyAJhVAjShhnmjO+qQfAE7CU5TnLjisK4MkGeSveZ7I6Q==", "user"=>{"email"=>"mruhaak@protonmail.com", "password"=>"[FILTERED]"}, "commit"=>"Log Me In!"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:10
+No template found for SessionsController#create, rendering head :no_content
+Completed 204 No Content in 29ms (ActiveRecord: 2.8ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-03-01 22:15:31 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 25ms (Views: 24.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-03-01 22:15:54 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 25ms (Views: 23.8ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2021-03-01 22:16:19 -0700
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"ZabZqawbr3ae5203t6FkMcGN+BfxLLHA6OeIxFuOnZ1VCTpnKFGNOBnw9HpF/YEle0pY4nmEuu87nWO/7E7Jaw=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-01 22:16:19 -0700
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 23ms (Views: 22.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-03-01 22:16:23 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 26ms (Views: 24.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-03-01 22:16:27 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Nrnb7tXNT7tFspvY5A3t2V9VIbGcVc5U3VOaho8rvVw33ulQzP1NM9ibTqUBKzXz0NR+JkHphqRfezldOksh+Q==", "user"=>{"email"=>"mruhaak@protonmail.com", "password"=>"[FILTERED]"}, "commit"=>"Log Me In!"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:10
+No template found for SessionsController#create, rendering head :no_content
+Completed 204 No Content in 21ms (ActiveRecord: 1.0ms)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2021-03-01 22:16:38 -0700
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"jJxMZcphuHGBAEWpSstiTZ5FiHKWUH5BfW+ULx3Qz1+8M6+rTiuaPwYX3OS4l4dZJIIohx74dW6uFX9UqhCbqQ=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-01 22:16:38 -0700
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 50ms (Views: 49.2ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2021-03-01 22:17:35 -0700
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"OsMWGrCdoi2sCMyPt39ef/GxaU5x7S1nRkZP9vt4HycKbPXUNNeAYysfVcJFI7trS3bJu/lFJkiVPKSNTLhL0Q=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-01 22:17:35 -0700
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 27ms (Views: 25.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-01 22:18:40 -0700
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/mike/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 326ms (Views: 320.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-01 22:19:14 -0700
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 23ms (Views: 22.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-01 22:19:29 -0700
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 39ms (Views: 37.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-01 22:19:37 -0700
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 27ms (Views: 26.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-01 22:19:43 -0700
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 23ms (Views: 22.3ms | ActiveRecord: 0.0ms)
+
+
