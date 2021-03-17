@@ -4,14 +4,14 @@ default: &default
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   host: localhost
   username: postgres
-  password: trinity19
+  password: muffin
   port: 5432
 
 development:
   <<: *default
   database: four-leaf-clovers_development
   username: postgres
-  password: trinity19
+  password: muffin
   host: localhost
   port: 5432
 
