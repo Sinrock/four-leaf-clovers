@@ -1,7 +1,7 @@
 <h1>Create Your Account Below To Join Our Community!</h1>
 
-<%= form_for(@user) do |f|%>
-  <%= f.label :"User Name:" %>
+<%= form_for :user do |f| %>
+  <%= f.label :"Username:" %>
   <%= f.text_field :user_name %>
     <br>
   <%= f.label :"Password:" %>
