@@ -1,7 +1,5 @@
+<%= flash[:error] if flash[:error] %>
 <h1>Log In Below To Join Us!</h1>
-
-<p><%= flash[:error] %></p>
-
 <%= form_for :user do |f| %>
 <%= f.label :"E-mail" %>
 <%= f.email_field :email %>
