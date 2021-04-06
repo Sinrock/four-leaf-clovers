@@ -16,6 +16,7 @@ ActiveRecord::Schema.define(version: 2021_02_24_030535) do
   enable_extension "plpgsql"
 
   create_table "authored_comments", force: :cascade do |t|
+    t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -28,6 +29,7 @@ ActiveRecord::Schema.define(version: 2021_02_24_030535) do
 
   create_table "comments", force: :cascade do |t|
     t.string "content"
+    t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -35,6 +37,8 @@ ActiveRecord::Schema.define(version: 2021_02_24_030535) do
   create_table "posts", force: :cascade do |t|
     t.string "title"
     t.string "body"
+    t.integer "user_id"
+    #t.integer "category_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

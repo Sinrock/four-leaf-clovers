@@ -1,1 +1,14 @@
-<h1>New Posts Page</h1>
+<h1>Create a New Post</h1>
+
+<%= form_for(@post) do |f| %>
+
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+
+    <%= f.label :body %>
+    <%= f.text_area :body %>
+
+    <%= f.submit %>
+
+
+<% end %>
