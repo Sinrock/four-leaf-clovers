@@ -3,6 +3,11 @@ class SessionsController < ApplicationController
     def welcome
     end
 
+    def destroy
+        session.delete(:user_id)
+        redirect_to '/'
+    end
+
     def new 
     end
 
@@ -16,10 +21,5 @@ class SessionsController < ApplicationController
             flash[:error] = "Hmmm, something isn't quite right with that information, please try again."
             redirect_to '/login'
         end
-    end
-    
-    def destroy
-        session.delete(:user_id)
-        redirect_to '/'
     end
 end

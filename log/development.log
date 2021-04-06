@@ -10288,3 +10288,1267 @@ Processing by SessionsController#welcome as HTML
 Completed 200 OK in 25ms (Views: 23.6ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2021-04-05 23:29:41 -0600
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:14: syntax error, unexpected ')', expecting then or ';' or '\n'
+...buffer.append=( if logged_in? );@output_buffer.safe_append='
+...                              ^
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:16: syntax error, unexpected else
+...ze;@output_buffer.append=( else );@output_buffer.safe_append...
+...                           ^~~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:19: syntax error, unexpected end
+...eze;@output_buffer.append=( end );@output_buffer.safe_append...
+...                            ^~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:27: syntax error, unexpected ensure, expecting ')'
+          ensure
+          ^~~~~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:29: syntax error, unexpected end, expecting ')'
+          end
+          ^~~):
+  
+app/views/layouts/application.html.erb:14: syntax error, unexpected ')', expecting then or ';' or '\n'
+app/views/layouts/application.html.erb:16: syntax error, unexpected else
+app/views/layouts/application.html.erb:19: syntax error, unexpected end
+app/views/layouts/application.html.erb:27: syntax error, unexpected ensure, expecting ')'
+app/views/layouts/application.html.erb:29: syntax error, unexpected end, expecting ')'
+Started GET "/" for 127.0.0.1 at 2021-04-05 23:31:51 -0600
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:14: syntax error, unexpected ')', expecting then or ';' or '\n'
+..._buffer.append=( if logged_in?);@output_buffer.safe_append='
+...                              ^
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:16: syntax error, unexpected else
+...ze;@output_buffer.append=( else );@output_buffer.safe_append...
+...                           ^~~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:19: syntax error, unexpected end
+...eze;@output_buffer.append=( end );@output_buffer.safe_append...
+...                            ^~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:27: syntax error, unexpected ensure, expecting ')'
+          ensure
+          ^~~~~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:29: syntax error, unexpected end, expecting ')'
+          end
+          ^~~):
+  
+app/views/layouts/application.html.erb:14: syntax error, unexpected ')', expecting then or ';' or '\n'
+app/views/layouts/application.html.erb:16: syntax error, unexpected else
+app/views/layouts/application.html.erb:19: syntax error, unexpected end
+app/views/layouts/application.html.erb:27: syntax error, unexpected ensure, expecting ')'
+app/views/layouts/application.html.erb:29: syntax error, unexpected end, expecting ')'
+Started GET "/" for 127.0.0.1 at 2021-04-05 23:34:21 -0600
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:14: syntax error, unexpected ')', expecting then or ';' or '\n'
+...buffer.append=( (if logged_in?));@output_buffer.safe_append='
+...                              ^
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:16: syntax error, unexpected else
+...ze;@output_buffer.append=( else );@output_buffer.safe_append...
+...                           ^~~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:19: syntax error, unexpected end
+...eze;@output_buffer.append=( end );@output_buffer.safe_append...
+...                            ^~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:27: syntax error, unexpected ensure, expecting ')'
+          ensure
+          ^~~~~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:29: syntax error, unexpected end, expecting ')'
+          end
+          ^~~):
+  
+app/views/layouts/application.html.erb:14: syntax error, unexpected ')', expecting then or ';' or '\n'
+app/views/layouts/application.html.erb:16: syntax error, unexpected else
+app/views/layouts/application.html.erb:19: syntax error, unexpected end
+app/views/layouts/application.html.erb:27: syntax error, unexpected ensure, expecting ')'
+app/views/layouts/application.html.erb:29: syntax error, unexpected end, expecting ')'
+Started GET "/" for 127.0.0.1 at 2021-04-05 23:36:18 -0600
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:14: syntax error, unexpected ')', expecting then or ';' or '\n'
+..._buffer.append=( if logged_in?);@output_buffer.safe_append='
+...                              ^
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:16: syntax error, unexpected then
+...ze;@output_buffer.append=( then );@output_buffer.safe_append...
+...                           ^~~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:19: syntax error, unexpected end
+...eze;@output_buffer.append=( end );@output_buffer.safe_append...
+...                            ^~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:27: syntax error, unexpected ensure, expecting ')'
+          ensure
+          ^~~~~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:29: syntax error, unexpected end, expecting ')'
+          end
+          ^~~):
+  
+app/views/layouts/application.html.erb:14: syntax error, unexpected ')', expecting then or ';' or '\n'
+app/views/layouts/application.html.erb:16: syntax error, unexpected then
+app/views/layouts/application.html.erb:19: syntax error, unexpected end
+app/views/layouts/application.html.erb:27: syntax error, unexpected ensure, expecting ')'
+app/views/layouts/application.html.erb:29: syntax error, unexpected end, expecting ')'
+Started GET "/" for 127.0.0.1 at 2021-04-05 23:39:28 -0600
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:14: syntax error, unexpected ')', expecting then or ';' or '\n'
+..._buffer.append=( if logged_in );@output_buffer.safe_append='
+...                              ^
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:16: syntax error, unexpected else
+...ze;@output_buffer.append=( else );@output_buffer.safe_append...
+...                           ^~~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:19: syntax error, unexpected end
+...eze;@output_buffer.append=( end );@output_buffer.safe_append...
+...                            ^~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:27: syntax error, unexpected ensure, expecting ')'
+          ensure
+          ^~~~~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:29: syntax error, unexpected end, expecting ')'
+          end
+          ^~~):
+  
+app/views/layouts/application.html.erb:14: syntax error, unexpected ')', expecting then or ';' or '\n'
+app/views/layouts/application.html.erb:16: syntax error, unexpected else
+app/views/layouts/application.html.erb:19: syntax error, unexpected end
+app/views/layouts/application.html.erb:27: syntax error, unexpected ensure, expecting ')'
+app/views/layouts/application.html.erb:29: syntax error, unexpected end, expecting ')'
+Started GET "/" for 127.0.0.1 at 2021-04-05 23:39:38 -0600
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (0.3ms)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:14: syntax error, unexpected ')', expecting then or ';' or '\n'
+...buffer.append=( if logged_in? );@output_buffer.safe_append='
+...                              ^
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:16: syntax error, unexpected else
+...ze;@output_buffer.append=( else );@output_buffer.safe_append...
+...                           ^~~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:19: syntax error, unexpected end
+...eze;@output_buffer.append=( end );@output_buffer.safe_append...
+...                            ^~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:27: syntax error, unexpected ensure, expecting ')'
+          ensure
+          ^~~~~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:29: syntax error, unexpected end, expecting ')'
+          end
+          ^~~):
+  
+app/views/layouts/application.html.erb:14: syntax error, unexpected ')', expecting then or ';' or '\n'
+app/views/layouts/application.html.erb:16: syntax error, unexpected else
+app/views/layouts/application.html.erb:19: syntax error, unexpected end
+app/views/layouts/application.html.erb:27: syntax error, unexpected ensure, expecting ')'
+app/views/layouts/application.html.erb:29: syntax error, unexpected end, expecting ')'
+Started GET "/" for 127.0.0.1 at 2021-04-05 23:40:20 -0600
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:14: syntax error, unexpected ')', expecting then or ';' or '\n'
+...buffer.append=( if logged_in? );@output_buffer.safe_append='
+...                              ^
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:16: syntax error, unexpected else
+...ze;@output_buffer.append=( else );@output_buffer.safe_append...
+...                           ^~~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:19: syntax error, unexpected end
+...eze;@output_buffer.append=( end );@output_buffer.safe_append...
+...                            ^~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:27: syntax error, unexpected ensure, expecting ')'
+          ensure
+          ^~~~~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:29: syntax error, unexpected end, expecting ')'
+          end
+          ^~~):
+  
+app/views/layouts/application.html.erb:14: syntax error, unexpected ')', expecting then or ';' or '\n'
+app/views/layouts/application.html.erb:16: syntax error, unexpected else
+app/views/layouts/application.html.erb:19: syntax error, unexpected end
+app/views/layouts/application.html.erb:27: syntax error, unexpected ensure, expecting ')'
+app/views/layouts/application.html.erb:29: syntax error, unexpected end, expecting ')'
+Started GET "/" for 127.0.0.1 at 2021-04-05 23:41:19 -0600
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (0.3ms)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:14: syntax error, unexpected ')', expecting then or ';' or '\n'
+...buffer.append=( if logged_in? );@output_buffer.safe_append='
+...                              ^
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:16: syntax error, unexpected else
+...ze;@output_buffer.append=( else );@output_buffer.safe_append...
+...                           ^~~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:19: syntax error, unexpected end
+...eze;@output_buffer.append=( end );@output_buffer.safe_append...
+...                            ^~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:27: syntax error, unexpected ensure, expecting ')'
+          ensure
+          ^~~~~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:29: syntax error, unexpected end, expecting ')'
+          end
+          ^~~):
+  
+app/views/layouts/application.html.erb:14: syntax error, unexpected ')', expecting then or ';' or '\n'
+app/views/layouts/application.html.erb:16: syntax error, unexpected else
+app/views/layouts/application.html.erb:19: syntax error, unexpected end
+app/views/layouts/application.html.erb:27: syntax error, unexpected ensure, expecting ')'
+app/views/layouts/application.html.erb:29: syntax error, unexpected end, expecting ')'
+Started GET "/" for 127.0.0.1 at 2021-04-05 23:41:43 -0600
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:14: syntax error, unexpected ')', expecting then or ';' or '\n'
+...buffer.append=( if logged_in? );@output_buffer.safe_append='
+...                              ^
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:16: syntax error, unexpected else
+...ze;@output_buffer.append=( else );@output_buffer.safe_append...
+...                           ^~~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:19: syntax error, unexpected end
+...eze;@output_buffer.append=( end );@output_buffer.safe_append...
+...                            ^~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:27: syntax error, unexpected ensure, expecting ')'
+          ensure
+          ^~~~~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:29: syntax error, unexpected end, expecting ')'
+          end
+          ^~~):
+  
+app/views/layouts/application.html.erb:14: syntax error, unexpected ')', expecting then or ';' or '\n'
+app/views/layouts/application.html.erb:16: syntax error, unexpected else
+app/views/layouts/application.html.erb:19: syntax error, unexpected end
+app/views/layouts/application.html.erb:27: syntax error, unexpected ensure, expecting ')'
+app/views/layouts/application.html.erb:29: syntax error, unexpected end, expecting ')'
+Started GET "/" for 127.0.0.1 at 2021-04-05 23:41:45 -0600
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:14: syntax error, unexpected ')', expecting then or ';' or '\n'
+...buffer.append=( if logged_in? );@output_buffer.safe_append='
+...                              ^
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:16: syntax error, unexpected else
+...ze;@output_buffer.append=( else );@output_buffer.safe_append...
+...                           ^~~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:19: syntax error, unexpected end
+...eze;@output_buffer.append=( end );@output_buffer.safe_append...
+...                            ^~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:27: syntax error, unexpected ensure, expecting ')'
+          ensure
+          ^~~~~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:29: syntax error, unexpected end, expecting ')'
+          end
+          ^~~):
+  
+app/views/layouts/application.html.erb:14: syntax error, unexpected ')', expecting then or ';' or '\n'
+app/views/layouts/application.html.erb:16: syntax error, unexpected else
+app/views/layouts/application.html.erb:19: syntax error, unexpected end
+app/views/layouts/application.html.erb:27: syntax error, unexpected ensure, expecting ')'
+app/views/layouts/application.html.erb:29: syntax error, unexpected end, expecting ')'
+Started GET "/" for 127.0.0.1 at 2021-04-05 23:42:01 -0600
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:14: syntax error, unexpected ')', expecting then or ';' or '\n'
+...buffer.append=( if logged_in? );@output_buffer.safe_append='
+...                              ^
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:16: syntax error, unexpected else
+...ze;@output_buffer.append=( else );@output_buffer.safe_append...
+...                           ^~~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:19: syntax error, unexpected end
+...eze;@output_buffer.append=( end );@output_buffer.safe_append...
+...                            ^~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:27: syntax error, unexpected ensure, expecting ')'
+          ensure
+          ^~~~~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:29: syntax error, unexpected end, expecting ')'
+          end
+          ^~~):
+  
+app/views/layouts/application.html.erb:14: syntax error, unexpected ')', expecting then or ';' or '\n'
+app/views/layouts/application.html.erb:16: syntax error, unexpected else
+app/views/layouts/application.html.erb:19: syntax error, unexpected end
+app/views/layouts/application.html.erb:27: syntax error, unexpected ensure, expecting ')'
+app/views/layouts/application.html.erb:29: syntax error, unexpected end, expecting ')'
+Started GET "/" for 127.0.0.1 at 2021-04-05 23:45:07 -0600
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+  
+AbstractController::ActionNotFound (The action 'welcome' could not be found for SessionsController):
+  
+actionpack (5.2.4.5) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.4.5) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.4.5) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.4.5) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.4.5) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.4.5) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.4.5) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.4.5) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.4.5) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.4.5) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.4.5) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.5) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.5) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.5) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.5) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.5) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.5) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.5) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.5) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.5) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.5) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2021-04-05 23:45:45 -0600
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:14: syntax error, unexpected ')', expecting then or ';' or '\n'
+...buffer.append=( if logged_in? );@output_buffer.safe_append='
+...                              ^
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:16: syntax error, unexpected else
+...ze;@output_buffer.append=( else );@output_buffer.safe_append...
+...                           ^~~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:19: syntax error, unexpected end
+...eze;@output_buffer.append=( end );@output_buffer.safe_append...
+...                            ^~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:27: syntax error, unexpected ensure, expecting ')'
+          ensure
+          ^~~~~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:29: syntax error, unexpected end, expecting ')'
+          end
+          ^~~):
+  
+app/views/layouts/application.html.erb:14: syntax error, unexpected ')', expecting then or ';' or '\n'
+app/views/layouts/application.html.erb:16: syntax error, unexpected else
+app/views/layouts/application.html.erb:19: syntax error, unexpected end
+app/views/layouts/application.html.erb:27: syntax error, unexpected ensure, expecting ')'
+app/views/layouts/application.html.erb:29: syntax error, unexpected end, expecting ')'
+Started GET "/" for 127.0.0.1 at 2021-04-05 23:46:58 -0600
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (0.3ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:14: syntax error, unexpected ')', expecting then or ';' or '\n'
+...buffer.append=( if logged_in? );@output_buffer.safe_append='
+...                              ^
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:16: syntax error, unexpected else
+...ze;@output_buffer.append=( else );@output_buffer.safe_append...
+...                           ^~~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:19: syntax error, unexpected end
+...eze;@output_buffer.append=( end );@output_buffer.safe_append...
+...                            ^~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:27: syntax error, unexpected ensure, expecting ')'
+          ensure
+          ^~~~~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:29: syntax error, unexpected end, expecting ')'
+          end
+          ^~~):
+  
+app/views/layouts/application.html.erb:14: syntax error, unexpected ')', expecting then or ';' or '\n'
+app/views/layouts/application.html.erb:16: syntax error, unexpected else
+app/views/layouts/application.html.erb:19: syntax error, unexpected end
+app/views/layouts/application.html.erb:27: syntax error, unexpected ensure, expecting ')'
+app/views/layouts/application.html.erb:29: syntax error, unexpected end, expecting ')'
+Started GET "/" for 127.0.0.1 at 2021-04-05 23:47:06 -0600
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:14: syntax error, unexpected ')', expecting then or ';' or '\n'
+...buffer.append=( if logged_in? );@output_buffer.safe_append='
+...                              ^
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:16: syntax error, unexpected else
+...ze;@output_buffer.append=( else );@output_buffer.safe_append...
+...                           ^~~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:19: syntax error, unexpected end
+...eze;@output_buffer.append=( end );@output_buffer.safe_append...
+...                            ^~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:27: syntax error, unexpected ensure, expecting ')'
+          ensure
+          ^~~~~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:29: syntax error, unexpected end, expecting ')'
+          end
+          ^~~):
+  
+app/views/layouts/application.html.erb:14: syntax error, unexpected ')', expecting then or ';' or '\n'
+app/views/layouts/application.html.erb:16: syntax error, unexpected else
+app/views/layouts/application.html.erb:19: syntax error, unexpected end
+app/views/layouts/application.html.erb:27: syntax error, unexpected ensure, expecting ')'
+app/views/layouts/application.html.erb:29: syntax error, unexpected end, expecting ')'
+Started GET "/" for 127.0.0.1 at 2021-04-05 23:47:21 -0600
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:14: syntax error, unexpected ')', expecting then or ';' or '\n'
+...buffer.append=( if logged_in? );@output_buffer.safe_append='
+...                              ^
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:16: syntax error, unexpected else
+...ze;@output_buffer.append=( else );@output_buffer.safe_append...
+...                           ^~~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:19: syntax error, unexpected end
+...eze;@output_buffer.append=( end );@output_buffer.safe_append...
+...                            ^~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:27: syntax error, unexpected ensure, expecting ')'
+          ensure
+          ^~~~~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:29: syntax error, unexpected end, expecting ')'
+          end
+          ^~~):
+  
+app/views/layouts/application.html.erb:14: syntax error, unexpected ')', expecting then or ';' or '\n'
+app/views/layouts/application.html.erb:16: syntax error, unexpected else
+app/views/layouts/application.html.erb:19: syntax error, unexpected end
+app/views/layouts/application.html.erb:27: syntax error, unexpected ensure, expecting ')'
+app/views/layouts/application.html.erb:29: syntax error, unexpected end, expecting ')'
+Started GET "/" for 127.0.0.1 at 2021-04-05 23:50:33 -0600
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:15: syntax error, unexpected ')', expecting then or ';' or '\n'
+...buffer.append=( if logged_in? );@output_buffer.safe_append='
+...                              ^
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:17: syntax error, unexpected else
+...ze;@output_buffer.append=( else );@output_buffer.safe_append...
+...                           ^~~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:20: syntax error, unexpected end
+...eze;@output_buffer.append=( end );@output_buffer.safe_append...
+...                            ^~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:28: syntax error, unexpected ensure, expecting ')'
+          ensure
+          ^~~~~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:30: syntax error, unexpected end, expecting ')'
+          end
+          ^~~):
+  
+app/views/layouts/application.html.erb:15: syntax error, unexpected ')', expecting then or ';' or '\n'
+app/views/layouts/application.html.erb:17: syntax error, unexpected else
+app/views/layouts/application.html.erb:20: syntax error, unexpected end
+app/views/layouts/application.html.erb:28: syntax error, unexpected ensure, expecting ')'
+app/views/layouts/application.html.erb:30: syntax error, unexpected end, expecting ')'
+Started GET "/" for 127.0.0.1 at 2021-04-05 23:51:26 -0600
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:15: syntax error, unexpected ')', expecting then or ';' or '\n'
+...buffer.append=( if logged_in? );@output_buffer.safe_append='
+...                              ^
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:17: syntax error, unexpected else
+...ze;@output_buffer.append=( else redirect_to '/' );@output_bu...
+...                           ^~~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:20: syntax error, unexpected end
+...eze;@output_buffer.append=( end );@output_buffer.safe_append...
+...                            ^~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:28: syntax error, unexpected ensure, expecting ')'
+          ensure
+          ^~~~~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:30: syntax error, unexpected end, expecting ')'
+          end
+          ^~~):
+  
+app/views/layouts/application.html.erb:15: syntax error, unexpected ')', expecting then or ';' or '\n'
+app/views/layouts/application.html.erb:17: syntax error, unexpected else
+app/views/layouts/application.html.erb:20: syntax error, unexpected end
+app/views/layouts/application.html.erb:28: syntax error, unexpected ensure, expecting ')'
+app/views/layouts/application.html.erb:30: syntax error, unexpected end, expecting ')'
+Started GET "/" for 127.0.0.1 at 2021-04-05 23:52:24 -0600
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:15: syntax error, unexpected ')', expecting then or ';' or '\n'
+...buffer.append=( if logged_in? );@output_buffer.safe_append='
+...                              ^
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:17: syntax error, unexpected else
+...ze;@output_buffer.append=( else );@output_buffer.safe_append...
+...                           ^~~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:20: syntax error, unexpected end
+...eze;@output_buffer.append=( end );@output_buffer.safe_append...
+...                            ^~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:28: syntax error, unexpected ensure, expecting ')'
+          ensure
+          ^~~~~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:30: syntax error, unexpected end, expecting ')'
+          end
+          ^~~):
+  
+app/views/layouts/application.html.erb:15: syntax error, unexpected ')', expecting then or ';' or '\n'
+app/views/layouts/application.html.erb:17: syntax error, unexpected else
+app/views/layouts/application.html.erb:20: syntax error, unexpected end
+app/views/layouts/application.html.erb:28: syntax error, unexpected ensure, expecting ')'
+app/views/layouts/application.html.erb:30: syntax error, unexpected end, expecting ')'
+Started GET "/" for 127.0.0.1 at 2021-04-05 23:52:31 -0600
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:15: syntax error, unexpected ')', expecting then or ';' or '\n'
+...buffer.append=( if logged_in? );@output_buffer.safe_append='
+...                              ^
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:17: syntax error, unexpected else
+...ze;@output_buffer.append=( else );@output_buffer.safe_append...
+...                           ^~~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:20: syntax error, unexpected end
+...eze;@output_buffer.append=( end );@output_buffer.safe_append...
+...                            ^~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:28: syntax error, unexpected ensure, expecting ')'
+          ensure
+          ^~~~~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:30: syntax error, unexpected end, expecting ')'
+          end
+          ^~~):
+  
+app/views/layouts/application.html.erb:15: syntax error, unexpected ')', expecting then or ';' or '\n'
+app/views/layouts/application.html.erb:17: syntax error, unexpected else
+app/views/layouts/application.html.erb:20: syntax error, unexpected end
+app/views/layouts/application.html.erb:28: syntax error, unexpected ensure, expecting ')'
+app/views/layouts/application.html.erb:30: syntax error, unexpected end, expecting ')'
+Started GET "/" for 127.0.0.1 at 2021-04-05 23:54:18 -0600
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:15: syntax error, unexpected ')', expecting then or ';' or '\n'
+...buffer.append=( if logged_in? );@output_buffer.safe_append='
+...                              ^
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:17: syntax error, unexpected else
+...ze;@output_buffer.append=( else );@output_buffer.safe_append...
+...                           ^~~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:20: syntax error, unexpected end
+...eze;@output_buffer.append=( end );@output_buffer.safe_append...
+...                            ^~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:28: syntax error, unexpected ensure, expecting ')'
+          ensure
+          ^~~~~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:30: syntax error, unexpected end, expecting ')'
+          end
+          ^~~):
+  
+app/views/layouts/application.html.erb:15: syntax error, unexpected ')', expecting then or ';' or '\n'
+app/views/layouts/application.html.erb:17: syntax error, unexpected else
+app/views/layouts/application.html.erb:20: syntax error, unexpected end
+app/views/layouts/application.html.erb:28: syntax error, unexpected ensure, expecting ')'
+app/views/layouts/application.html.erb:30: syntax error, unexpected end, expecting ')'
+Started GET "/" for 127.0.0.1 at 2021-04-05 23:54:52 -0600
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (0.3ms)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:15: syntax error, unexpected ')', expecting then or ';' or '\n'
+...buffer.append=( if logged_in? );@output_buffer.safe_append='
+...                              ^
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:17: syntax error, unexpected else
+...ze;@output_buffer.append=( else );@output_buffer.safe_append...
+...                           ^~~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:20: syntax error, unexpected end
+...eze;@output_buffer.append=( end );@output_buffer.safe_append...
+...                            ^~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:28: syntax error, unexpected ensure, expecting ')'
+          ensure
+          ^~~~~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:30: syntax error, unexpected end, expecting ')'
+          end
+          ^~~):
+  
+app/views/layouts/application.html.erb:15: syntax error, unexpected ')', expecting then or ';' or '\n'
+app/views/layouts/application.html.erb:17: syntax error, unexpected else
+app/views/layouts/application.html.erb:20: syntax error, unexpected end
+app/views/layouts/application.html.erb:28: syntax error, unexpected ensure, expecting ')'
+app/views/layouts/application.html.erb:30: syntax error, unexpected end, expecting ')'
+Started GET "/" for 127.0.0.1 at 2021-04-05 23:55:44 -0600
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:15: syntax error, unexpected ')', expecting then or ';' or '\n'
+...buffer.append=( if logged_in? );@output_buffer.safe_append='
+...                              ^
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:17: syntax error, unexpected else
+...ze;@output_buffer.append=( else );@output_buffer.safe_append...
+...                           ^~~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:20: syntax error, unexpected end
+...eze;@output_buffer.append=( end );@output_buffer.safe_append...
+...                            ^~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:28: syntax error, unexpected ensure, expecting ')'
+          ensure
+          ^~~~~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:30: syntax error, unexpected end, expecting ')'
+          end
+          ^~~):
+  
+app/views/layouts/application.html.erb:15: syntax error, unexpected ')', expecting then or ';' or '\n'
+app/views/layouts/application.html.erb:17: syntax error, unexpected else
+app/views/layouts/application.html.erb:20: syntax error, unexpected end
+app/views/layouts/application.html.erb:28: syntax error, unexpected ensure, expecting ')'
+app/views/layouts/application.html.erb:30: syntax error, unexpected end, expecting ')'
+Started GET "/" for 127.0.0.1 at 2021-04-05 23:56:18 -0600
+  
+SyntaxError (/home/michael/code/projects/mod3/four-leaf-clovers/app/controllers/sessions_controller.rb:26: syntax error, unexpected end-of-input, expecting end):
+  
+app/controllers/sessions_controller.rb:26: syntax error, unexpected end-of-input, expecting end
+Started GET "/" for 127.0.0.1 at 2021-04-05 23:58:28 -0600
+Processing by UsersController#welcome as HTML
+  Rendering users/welcome.html.erb within layouts/application
+  Rendered users/welcome.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:15: syntax error, unexpected ')', expecting then or ';' or '\n'
+...buffer.append=( if logged_in? );@output_buffer.safe_append='
+...                              ^
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:17: syntax error, unexpected else
+...ze;@output_buffer.append=( else );@output_buffer.safe_append...
+...                           ^~~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:20: syntax error, unexpected end
+...eze;@output_buffer.append=( end );@output_buffer.safe_append...
+...                            ^~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:28: syntax error, unexpected ensure, expecting ')'
+          ensure
+          ^~~~~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:30: syntax error, unexpected end, expecting ')'
+          end
+          ^~~):
+  
+app/views/layouts/application.html.erb:15: syntax error, unexpected ')', expecting then or ';' or '\n'
+app/views/layouts/application.html.erb:17: syntax error, unexpected else
+app/views/layouts/application.html.erb:20: syntax error, unexpected end
+app/views/layouts/application.html.erb:28: syntax error, unexpected ensure, expecting ')'
+app/views/layouts/application.html.erb:30: syntax error, unexpected end, expecting ')'
+Started GET "/" for 127.0.0.1 at 2021-04-05 23:59:47 -0600
+Processing by UsersController#welcome as HTML
+  Rendering users/welcome.html.erb within layouts/application
+  Rendered users/welcome.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:15: syntax error, unexpected ')', expecting then or ';' or '\n'
+...buffer.append=( if logged_in? );@output_buffer.safe_append='
+...                              ^
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:17: syntax error, unexpected else
+...ze;@output_buffer.append=( else );@output_buffer.safe_append...
+...                           ^~~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:20: syntax error, unexpected end
+...eze;@output_buffer.append=( end );@output_buffer.safe_append...
+...                            ^~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:28: syntax error, unexpected ensure, expecting ')'
+          ensure
+          ^~~~~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:30: syntax error, unexpected end, expecting ')'
+          end
+          ^~~):
+  
+app/views/layouts/application.html.erb:15: syntax error, unexpected ')', expecting then or ';' or '\n'
+app/views/layouts/application.html.erb:17: syntax error, unexpected else
+app/views/layouts/application.html.erb:20: syntax error, unexpected end
+app/views/layouts/application.html.erb:28: syntax error, unexpected ensure, expecting ')'
+app/views/layouts/application.html.erb:30: syntax error, unexpected end, expecting ')'
+Started GET "/" for 127.0.0.1 at 2021-04-06 00:01:49 -0600
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:22: syntax error, unexpected '<', expecting ')'
+    </div>
+    ^
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:24: unknown regexp options - bdy
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:25: syntax error, unexpected '<'
+</html>
+^
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:30: unterminated regexp meets end of file
+          end
+              ^
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:30: syntax error, unexpected end-of-input, expecting ')'):
+  
+app/views/layouts/application.html.erb:22: syntax error, unexpected '<', expecting ')'
+app/views/layouts/application.html.erb:24: unknown regexp options - bdy
+app/views/layouts/application.html.erb:25: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:30: unterminated regexp meets end of file
+app/views/layouts/application.html.erb:30: syntax error, unexpected end-of-input, expecting ')'
+Started GET "/" for 127.0.0.1 at 2021-04-06 00:02:03 -0600
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:15: syntax error, unexpected ')', expecting then or ';' or '\n'
+...buffer.append=( if logged_in? );@output_buffer.safe_append='
+...                              ^
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:17: syntax error, unexpected else
+...ze;@output_buffer.append=( else );@output_buffer.safe_append...
+...                           ^~~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:20: syntax error, unexpected end
+...eze;@output_buffer.append=( end );@output_buffer.safe_append...
+...                            ^~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:28: syntax error, unexpected ensure, expecting ')'
+          ensure
+          ^~~~~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:30: syntax error, unexpected end, expecting ')'
+          end
+          ^~~):
+  
+app/views/layouts/application.html.erb:15: syntax error, unexpected ')', expecting then or ';' or '\n'
+app/views/layouts/application.html.erb:17: syntax error, unexpected else
+app/views/layouts/application.html.erb:20: syntax error, unexpected end
+app/views/layouts/application.html.erb:28: syntax error, unexpected ensure, expecting ')'
+app/views/layouts/application.html.erb:30: syntax error, unexpected end, expecting ')'
+Started GET "/" for 127.0.0.1 at 2021-04-06 00:02:26 -0600
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:15: syntax error, unexpected ')', expecting then or ';' or '\n'
+...buffer.append=( if logged_in? );@output_buffer.safe_append='
+...                              ^
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:17: syntax error, unexpected else
+...ze;@output_buffer.append=( else; );@output_buffer.safe_appen...
+...                           ^~~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:20: syntax error, unexpected end
+...eze;@output_buffer.append=( end );@output_buffer.safe_append...
+...                            ^~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:28: syntax error, unexpected ensure, expecting ')'
+          ensure
+          ^~~~~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:30: syntax error, unexpected end, expecting ')'
+          end
+          ^~~):
+  
+app/views/layouts/application.html.erb:15: syntax error, unexpected ')', expecting then or ';' or '\n'
+app/views/layouts/application.html.erb:17: syntax error, unexpected else
+app/views/layouts/application.html.erb:20: syntax error, unexpected end
+app/views/layouts/application.html.erb:28: syntax error, unexpected ensure, expecting ')'
+app/views/layouts/application.html.erb:30: syntax error, unexpected end, expecting ')'
+Started GET "/" for 127.0.0.1 at 2021-04-06 00:02:33 -0600
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:15: syntax error, unexpected ')', expecting then or ';' or '\n'
+...buffer.append=( if logged_in? );@output_buffer.safe_append='
+...                              ^
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:17: syntax error, unexpected tLABEL
+...e;@output_buffer.append=( else: );@output_buffer.safe_append...
+...                          ^~~~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:20: syntax error, unexpected end
+...eze;@output_buffer.append=( end );@output_buffer.safe_append...
+...                            ^~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:28: syntax error, unexpected ensure, expecting ')'
+          ensure
+          ^~~~~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:30: syntax error, unexpected end, expecting ')'
+          end
+          ^~~):
+  
+app/views/layouts/application.html.erb:15: syntax error, unexpected ')', expecting then or ';' or '\n'
+app/views/layouts/application.html.erb:17: syntax error, unexpected tLABEL
+app/views/layouts/application.html.erb:20: syntax error, unexpected end
+app/views/layouts/application.html.erb:28: syntax error, unexpected ensure, expecting ')'
+app/views/layouts/application.html.erb:30: syntax error, unexpected end, expecting ')'
+Started GET "/" for 127.0.0.1 at 2021-04-06 00:14:10 -0600
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:15: syntax error, unexpected ')', expecting then or ';' or '\n'
+...buffer.append=( if logged_in? );@output_buffer.safe_append='
+...                              ^
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:17: syntax error, unexpected else
+...ze;@output_buffer.append=( else );@output_buffer.safe_append...
+...                           ^~~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:20: syntax error, unexpected end
+...eze;@output_buffer.append=( end );@output_buffer.safe_append...
+...                            ^~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:28: syntax error, unexpected ensure, expecting ')'
+          ensure
+          ^~~~~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:30: syntax error, unexpected end, expecting ')'
+          end
+          ^~~):
+  
+app/views/layouts/application.html.erb:15: syntax error, unexpected ')', expecting then or ';' or '\n'
+app/views/layouts/application.html.erb:17: syntax error, unexpected else
+app/views/layouts/application.html.erb:20: syntax error, unexpected end
+app/views/layouts/application.html.erb:28: syntax error, unexpected ensure, expecting ')'
+app/views/layouts/application.html.erb:30: syntax error, unexpected end, expecting ')'
+Started GET "/" for 127.0.0.1 at 2021-04-06 00:19:43 -0600
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Processing by SessionsController#welcome as HTML
+Completed 500 Internal Server Error in 165ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `user' for #<SessionsController:0x00007fe104e93b20>
+Did you mean?  super):
+  
+app/controllers/sessions_controller.rb:4:in `welcome'
+Started GET "/" for 127.0.0.1 at 2021-04-06 00:19:56 -0600
+Processing by SessionsController#welcome as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"users"}, missing required keys: [:id]):
+  
+app/controllers/sessions_controller.rb:4:in `welcome'
+Started GET "/" for 127.0.0.1 at 2021-04-06 00:20:06 -0600
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (0.3ms)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:15: syntax error, unexpected ')', expecting then or ';' or '\n'
+...buffer.append=( if logged_in? );@output_buffer.safe_append='
+...                              ^
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:17: syntax error, unexpected else
+...ze;@output_buffer.append=( else );@output_buffer.safe_append...
+...                           ^~~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:20: syntax error, unexpected end
+...eze;@output_buffer.append=( end );@output_buffer.safe_append...
+...                            ^~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:28: syntax error, unexpected ensure, expecting ')'
+          ensure
+          ^~~~~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:30: syntax error, unexpected end, expecting ')'
+          end
+          ^~~):
+  
+app/views/layouts/application.html.erb:15: syntax error, unexpected ')', expecting then or ';' or '\n'
+app/views/layouts/application.html.erb:17: syntax error, unexpected else
+app/views/layouts/application.html.erb:20: syntax error, unexpected end
+app/views/layouts/application.html.erb:28: syntax error, unexpected ensure, expecting ')'
+app/views/layouts/application.html.erb:30: syntax error, unexpected end, expecting ')'
+Started GET "/" for 127.0.0.1 at 2021-04-06 00:20:58 -0600
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:15: syntax error, unexpected ')'
+...uffer.append=( if logged_in?; );@output_buffer.safe_append='
+...                              ^
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:17: syntax error, unexpected else
+...ze;@output_buffer.append=( else );@output_buffer.safe_append...
+...                           ^~~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:20: syntax error, unexpected end
+...eze;@output_buffer.append=( end );@output_buffer.safe_append...
+...                            ^~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:28: syntax error, unexpected ensure, expecting ')'
+          ensure
+          ^~~~~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:30: syntax error, unexpected end, expecting ')'
+          end
+          ^~~):
+  
+app/views/layouts/application.html.erb:15: syntax error, unexpected ')'
+app/views/layouts/application.html.erb:17: syntax error, unexpected else
+app/views/layouts/application.html.erb:20: syntax error, unexpected end
+app/views/layouts/application.html.erb:28: syntax error, unexpected ensure, expecting ')'
+app/views/layouts/application.html.erb:30: syntax error, unexpected end, expecting ')'
+Started GET "/" for 127.0.0.1 at 2021-04-06 00:21:04 -0600
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:15: syntax error, unexpected ')'
+...ffer.append=( if logged_in? ; );@output_buffer.safe_append='
+...                              ^
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:17: syntax error, unexpected else
+...ze;@output_buffer.append=( else );@output_buffer.safe_append...
+...                           ^~~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:20: syntax error, unexpected end
+...eze;@output_buffer.append=( end );@output_buffer.safe_append...
+...                            ^~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:28: syntax error, unexpected ensure, expecting ')'
+          ensure
+          ^~~~~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:30: syntax error, unexpected end, expecting ')'
+          end
+          ^~~):
+  
+app/views/layouts/application.html.erb:15: syntax error, unexpected ')'
+app/views/layouts/application.html.erb:17: syntax error, unexpected else
+app/views/layouts/application.html.erb:20: syntax error, unexpected end
+app/views/layouts/application.html.erb:28: syntax error, unexpected ensure, expecting ')'
+app/views/layouts/application.html.erb:30: syntax error, unexpected end, expecting ')'
+Started GET "/" for 127.0.0.1 at 2021-04-06 00:21:10 -0600
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:15: syntax error, unexpected ')'
+...uffer.append=( if logged_in? ;);@output_buffer.safe_append='
+...                              ^
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:17: syntax error, unexpected else
+...ze;@output_buffer.append=( else );@output_buffer.safe_append...
+...                           ^~~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:20: syntax error, unexpected end
+...eze;@output_buffer.append=( end );@output_buffer.safe_append...
+...                            ^~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:28: syntax error, unexpected ensure, expecting ')'
+          ensure
+          ^~~~~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:30: syntax error, unexpected end, expecting ')'
+          end
+          ^~~):
+  
+app/views/layouts/application.html.erb:15: syntax error, unexpected ')'
+app/views/layouts/application.html.erb:17: syntax error, unexpected else
+app/views/layouts/application.html.erb:20: syntax error, unexpected end
+app/views/layouts/application.html.erb:28: syntax error, unexpected ensure, expecting ')'
+app/views/layouts/application.html.erb:30: syntax error, unexpected end, expecting ')'
+Started GET "/" for 127.0.0.1 at 2021-04-06 00:21:17 -0600
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (0.3ms)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:15: syntax error, unexpected ')', expecting then or ';' or '\n'
+...buffer.append=( if logged_in? );@output_buffer.safe_append='
+...                              ^
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:17: syntax error, unexpected else
+...ze;@output_buffer.append=( else );@output_buffer.safe_append...
+...                           ^~~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:20: syntax error, unexpected end
+...eze;@output_buffer.append=( end );@output_buffer.safe_append...
+...                            ^~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:28: syntax error, unexpected ensure, expecting ')'
+          ensure
+          ^~~~~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:30: syntax error, unexpected end, expecting ')'
+          end
+          ^~~):
+  
+app/views/layouts/application.html.erb:15: syntax error, unexpected ')', expecting then or ';' or '\n'
+app/views/layouts/application.html.erb:17: syntax error, unexpected else
+app/views/layouts/application.html.erb:20: syntax error, unexpected end
+app/views/layouts/application.html.erb:28: syntax error, unexpected ensure, expecting ')'
+app/views/layouts/application.html.erb:30: syntax error, unexpected end, expecting ')'
+Started GET "/" for 127.0.0.1 at 2021-04-06 00:24:24 -0600
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:15: syntax error, unexpected ')', expecting then or ';' or '\n'
+...uffer.append=( if !logged_in? );@output_buffer.safe_append='
+...                              ^
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:18: syntax error, unexpected else
+...ze;@output_buffer.append=( else );@output_buffer.safe_append...
+...                           ^~~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:20: syntax error, unexpected end
+...eze;@output_buffer.append=( end );@output_buffer.safe_append...
+...                            ^~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:28: syntax error, unexpected ensure, expecting ')'
+          ensure
+          ^~~~~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:30: syntax error, unexpected end, expecting ')'
+          end
+          ^~~):
+  
+app/views/layouts/application.html.erb:15: syntax error, unexpected ')', expecting then or ';' or '\n'
+app/views/layouts/application.html.erb:18: syntax error, unexpected else
+app/views/layouts/application.html.erb:20: syntax error, unexpected end
+app/views/layouts/application.html.erb:28: syntax error, unexpected ensure, expecting ')'
+app/views/layouts/application.html.erb:30: syntax error, unexpected end, expecting ')'
+Started GET "/" for 127.0.0.1 at 2021-04-06 00:25:46 -0600
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:15: syntax error, unexpected ')', expecting then or ';' or '\n'
+...buffer.append=( if logged_in? );@output_buffer.safe_append='
+...                              ^
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:17: syntax error, unexpected else
+...ze;@output_buffer.append=( else );@output_buffer.safe_append...
+...                           ^~~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:20: syntax error, unexpected end
+...eze;@output_buffer.append=( end );@output_buffer.safe_append...
+...                            ^~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:28: syntax error, unexpected ensure, expecting ')'
+          ensure
+          ^~~~~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:30: syntax error, unexpected end, expecting ')'
+          end
+          ^~~):
+  
+app/views/layouts/application.html.erb:15: syntax error, unexpected ')', expecting then or ';' or '\n'
+app/views/layouts/application.html.erb:17: syntax error, unexpected else
+app/views/layouts/application.html.erb:20: syntax error, unexpected end
+app/views/layouts/application.html.erb:28: syntax error, unexpected ensure, expecting ')'
+app/views/layouts/application.html.erb:30: syntax error, unexpected end, expecting ')'
+Started GET "/" for 127.0.0.1 at 2021-04-06 00:25:49 -0600
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:15: syntax error, unexpected ')', expecting then or ';' or '\n'
+...buffer.append=( if logged_in? );@output_buffer.safe_append='
+...                              ^
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:17: syntax error, unexpected else
+...ze;@output_buffer.append=( else );@output_buffer.safe_append...
+...                           ^~~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:20: syntax error, unexpected end
+...eze;@output_buffer.append=( end );@output_buffer.safe_append...
+...                            ^~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:28: syntax error, unexpected ensure, expecting ')'
+          ensure
+          ^~~~~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:30: syntax error, unexpected end, expecting ')'
+          end
+          ^~~):
+  
+app/views/layouts/application.html.erb:15: syntax error, unexpected ')', expecting then or ';' or '\n'
+app/views/layouts/application.html.erb:17: syntax error, unexpected else
+app/views/layouts/application.html.erb:20: syntax error, unexpected end
+app/views/layouts/application.html.erb:28: syntax error, unexpected ensure, expecting ')'
+app/views/layouts/application.html.erb:30: syntax error, unexpected end, expecting ')'
+Started GET "/" for 127.0.0.1 at 2021-04-06 00:26:01 -0600
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (0.3ms)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:15: syntax error, unexpected ')', expecting then or ';' or '\n'
+...buffer.append=( if logged_in? );@output_buffer.safe_append='
+...                              ^
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:17: syntax error, unexpected else
+...ze;@output_buffer.append=( else; );@output_buffer.safe_appen...
+...                           ^~~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:20: syntax error, unexpected end
+...eze;@output_buffer.append=( end );@output_buffer.safe_append...
+...                            ^~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:28: syntax error, unexpected ensure, expecting ')'
+          ensure
+          ^~~~~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:30: syntax error, unexpected end, expecting ')'
+          end
+          ^~~):
+  
+app/views/layouts/application.html.erb:15: syntax error, unexpected ')', expecting then or ';' or '\n'
+app/views/layouts/application.html.erb:17: syntax error, unexpected else
+app/views/layouts/application.html.erb:20: syntax error, unexpected end
+app/views/layouts/application.html.erb:28: syntax error, unexpected ensure, expecting ')'
+app/views/layouts/application.html.erb:30: syntax error, unexpected end, expecting ')'
+Started GET "/" for 127.0.0.1 at 2021-04-06 00:26:08 -0600
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:15: syntax error, unexpected ')', expecting then or ';' or '\n'
+...buffer.append=( if logged_in? );@output_buffer.safe_append='
+...                              ^
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:17: syntax error, unexpected else
+...ze;@output_buffer.append=( else then );@output_buffer.safe_a...
+...                           ^~~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:20: syntax error, unexpected end
+...eze;@output_buffer.append=( end );@output_buffer.safe_append...
+...                            ^~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:28: syntax error, unexpected ensure, expecting ')'
+          ensure
+          ^~~~~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/layouts/application.html.erb:30: syntax error, unexpected end, expecting ')'
+          end
+          ^~~):
+  
+app/views/layouts/application.html.erb:15: syntax error, unexpected ')', expecting then or ';' or '\n'
+app/views/layouts/application.html.erb:17: syntax error, unexpected else
+app/views/layouts/application.html.erb:20: syntax error, unexpected end
+app/views/layouts/application.html.erb:28: syntax error, unexpected ensure, expecting ')'
+app/views/layouts/application.html.erb:30: syntax error, unexpected end, expecting ')'
+Started GET "/" for 127.0.0.1 at 2021-04-06 00:27:20 -0600
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 246ms (Views: 239.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-04-06 00:27:24 -0600
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 47ms (Views: 45.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-04-06 00:27:27 -0600
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5M2H0g/XPO3Sgk10TClk5EAi1/L/NqC6MxBhnaSFpgNIN7IOhbMz6cOtf+3LnwLbCJ/A6jOq3z5ii4xvXWgoPw==", "user"=>{"email"=>"email@email.com", "password"=>"[FILTERED]"}, "commit"=>"Log Me In!"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "email@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:15
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 297ms (ActiveRecord: 7.4ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2021-04-06 00:27:27 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 33ms (Views: 29.6ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2021-04-06 00:27:29 -0600
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"t4FMYA0Ks/joxseyQmcJ1Nn565K3viXmPDk2hVUqWeJC6ra3Str/TfRABvpnTxjYPKbTzOspXn0SdNd0QtPEfg=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-06 00:27:29 -0600
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 37ms (Views: 35.4ms | ActiveRecord: 0.0ms)
+
+
