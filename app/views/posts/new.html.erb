@@ -8,6 +8,11 @@
     <%= f.label :body %>
     <%= f.text_area :body %>
 
+    <%= f.select :topic_id, [ 'Overgrowth of Hands/feet', 'Upper-body Affected', 'Lower-body affected', 'Lymphatic Malformations'], :prompt => 'Please Select One' %>
+
+
+   
+
     <%= f.submit %>
 
 <% end %>

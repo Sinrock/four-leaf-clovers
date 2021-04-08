@@ -13807,3 +13807,870 @@ Processing by SessionsController#welcome as HTML
 Completed 200 OK in 441ms (Views: 432.0ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2021-04-07 23:05:34 -0600
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 332ms (Views: 326.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-04-07 23:05:36 -0600
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 45ms (Views: 40.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-04-07 23:05:39 -0600
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ylcbLbQz3SzPlAnLV1EFa0mO8UPIwAqECWHQrzqk+l9mrS7xPlfSKN67O1LQ52NUATPmWwRcdQBY+j1dw0l0Yw==", "user"=>{"email"=>"email@email.com", "password"=>"[FILTERED]"}, "commit"=>"Log Me In!"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/michael/code/projects/mod3/four-leaf-clovers/app/models/user.rb:6: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+...any :commented_posts, through :comments
+...                              ^
+/home/michael/code/projects/mod3/four-leaf-clovers/app/models/user.rb:7: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+    has_many :topics, through :posts
+                              ^):
+  
+app/models/user.rb:6: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+app/models/user.rb:7: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+app/controllers/sessions_controller.rb:15:in `create'
+Started POST "/login" for 127.0.0.1 at 2021-04-07 23:12:15 -0600
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ylcbLbQz3SzPlAnLV1EFa0mO8UPIwAqECWHQrzqk+l9mrS7xPlfSKN67O1LQ52NUATPmWwRcdQBY+j1dw0l0Yw==", "user"=>{"email"=>"email@email.com", "password"=>"[FILTERED]"}, "commit"=>"Log Me In!"}
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/michael/code/projects/mod3/four-leaf-clovers/app/models/user.rb:6: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+...any :commented_posts, through :comments
+...                              ^
+/home/michael/code/projects/mod3/four-leaf-clovers/app/models/user.rb:7: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+    has_many :topics, through :posts
+                              ^):
+  
+app/models/user.rb:6: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+app/models/user.rb:7: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+app/controllers/sessions_controller.rb:15:in `create'
+Started GET "/users/1" for 127.0.0.1 at 2021-04-07 23:12:23 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+Redirected to http://localhost:3000/
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/michael/code/projects/mod3/four-leaf-clovers/app/models/user.rb:6: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+...any :commented_posts, through :comments
+...                              ^
+/home/michael/code/projects/mod3/four-leaf-clovers/app/models/user.rb:7: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+    has_many :topics, through :posts
+                              ^):
+  
+app/models/user.rb:6: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+app/models/user.rb:7: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+app/controllers/users_controller.rb:19:in `show'
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_try_advisory_lock(584177703887606325)[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (1.6ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(584177703887606325)[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+Started GET "/" for 127.0.0.1 at 2021-04-07 23:32:01 -0600
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 257ms (Views: 250.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-04-07 23:32:04 -0600
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 32ms (Views: 31.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-04-07 23:32:07 -0600
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rBIxfZujMThr1+PvcCqBglafpov04ZjjZyr5Y6USR8QA6AShEcc+PHr40Xb3nOe9HiKxkzh952c2sRSRXP/J+A==", "user"=>{"email"=>"email@email.com", "password"=>"[FILTERED]"}, "commit"=>"Log Me In!"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/michael/code/projects/mod3/four-leaf-clovers/app/models/user.rb:6: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+...any :commented_posts, through :comments
+...                              ^
+/home/michael/code/projects/mod3/four-leaf-clovers/app/models/user.rb:7: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+    has_many :topics, through :posts
+                              ^):
+  
+app/models/user.rb:6: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+app/models/user.rb:7: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+app/controllers/sessions_controller.rb:15:in `create'
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_try_advisory_lock(584177703887606325)[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(584177703887606325)[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+Started GET "/" for 127.0.0.1 at 2021-04-07 23:43:17 -0600
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 270ms (Views: 261.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-04-07 23:43:19 -0600
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 35ms (Views: 34.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-04-07 23:43:23 -0600
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qflaLMUhnxRR0myqNOyDwr95nNK2abaSpOU9fyWdZ2UFA2/wT0WQEED9XjOzWuX998SLynr1yRb1ftCN3HDpWQ==", "user"=>{"email"=>"email@email.com", "password"=>"[FILTERED]"}, "commit"=>"Log Me In!"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/michael/code/projects/mod3/four-leaf-clovers/app/models/user.rb:6: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+...any :commented_posts, through :comments, source: :post
+...                              ^
+/home/michael/code/projects/mod3/four-leaf-clovers/app/models/user.rb:7: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+    has_many :topics, through :posts
+                              ^):
+  
+app/models/user.rb:6: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+app/models/user.rb:7: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+app/controllers/sessions_controller.rb:15:in `create'
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(584177703887606325)[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(584177703887606325)[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_try_advisory_lock(584177703887606325)[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(584177703887606325)[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(584177703887606325)[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_advisory_unlock(584177703887606325)[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(584177703887606325)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(584177703887606325)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(584177703887606325)[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(584177703887606325)[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(584177703887606325)[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(584177703887606325)[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+Started GET "/" for 127.0.0.1 at 2021-04-07 23:54:59 -0600
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 259ms (Views: 253.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-04-07 23:55:01 -0600
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 34ms (Views: 33.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-04-07 23:55:03 -0600
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mL3eDOg4JK9olWs0lA7LYX8ow5MISyKSK0LWaQ/xTTI0R+vQYlwrq3m6Wa0TuK1eN5XUi8TXXRZ62Tub9hzDDg==", "user"=>{"email"=>"email@email.com", "password"=>"[FILTERED]"}, "commit"=>"Log Me In!"}
+  [1m[36mUser Load (8.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "email@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:15
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 301ms (ActiveRecord: 13.5ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2021-04-07 23:55:04 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 46ms (Views: 25.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2021-04-07 23:55:06 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 50ms (Views: 32.3ms | ActiveRecord: 4.1ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2021-04-07 23:55:15 -0600
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EGgcmD4MALqLsvUhBiX/nxTEAnMAaOsbG5A5Y5RJE26IQcBriKTBTPrbZE+5UIg0tRd6YPJI3ZXfIs4ln6n4ow==", "post"=>{"title"=>"test 1", "body"=>"hope this works now"}, "commit"=>"Create Post"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:17
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/posts_controller.rb:17
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.5ms)
+
+
+  
+SyntaxError (/home/michael/code/projects/mod3/four-leaf-clovers/app/models/topic.rb:3: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+    has_many :users, through :posts
+                             ^):
+  
+app/models/topic.rb:3: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+app/controllers/posts_controller.rb:17:in `create'
+Started POST "/posts" for 127.0.0.1 at 2021-04-07 23:55:32 -0600
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EGgcmD4MALqLsvUhBiX/nxTEAnMAaOsbG5A5Y5RJE26IQcBriKTBTPrbZE+5UIg0tRd6YPJI3ZXfIs4ln6n4ow==", "post"=>{"title"=>"test 1", "body"=>"hope this works now"}, "commit"=>"Create Post"}
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:17
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/posts_controller.rb:17
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 60ms (Views: 28.8ms | ActiveRecord: 4.0ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2021-04-07 23:56:22 -0600
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Suyhx3RfDk0oOJpGm4saZ5gLZqsTZWsQwob/b7zRlxC/h1sQM49C+DS+Ww6+owtrfVRe9U/yEIvsyx6eqygKjA==", "post"=>{"title"=>"test 1", "body"=>"hope this works now"}, "commit"=>"Create Post"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:17
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/posts_controller.rb:17
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 53ms (Views: 28.0ms | ActiveRecord: 3.7ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2021-04-07 23:57:37 -0600
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cSE0tzR9Iddcrq+B/+kU3jmOpLbi/x7kUaBg4KQ5xpWESs5gc61tYkAobsnawQXS3NGc6L5oZX9/7YERs8BbCQ==", "post"=>{"title"=>"test 1", "body"=>"hope this works now"}, "commit"=>"Create Post"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:17
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/posts_controller.rb:17
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 81ms (Views: 27.3ms | ActiveRecord: 4.9ms)
+
+
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists (1.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Exists (1.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."user_name" = $1 LIMIT $2[0m  [["user_name", "test"], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.6ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.6ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTopic Create (5.4ms)[0m  [1m[32mINSERT INTO "topics" ("title", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "first topic"], ["created_at", "2021-04-08 06:07:02.189991"], ["updated_at", "2021-04-08 06:07:02.189991"]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.5ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.5ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.5ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+Started GET "/" for 127.0.0.1 at 2021-04-08 00:12:50 -0600
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 274ms (Views: 268.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2021-04-08 00:12:53 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 53ms (Views: 29.3ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-04-08 00:12:53 -0600
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 41ms (Views: 33.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2021-04-08 00:12:56 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 33ms (Views: 31.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2021-04-08 00:12:59 -0600
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QYdaMksVGpmaaqgKoSnWMe0qDsxtBWUlA1kQwQaTx5XZrobB/b3bb+sDOWQeXKGaTPl2358lU6vH6+eHDXMsWA==", "post"=>{"title"=>"asdf", "body"=>"asdf"}, "commit"=>"Create Post"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:17
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/posts_controller.rb:17
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 47ms (Views: 29.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-04-08 00:15:12 -0600
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 34ms (Views: 32.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2021-04-08 00:15:13 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 32ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2021-04-08 00:15:25 -0600
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2qgdfD/66xDFzPqd4Oy4NoocRzEXz6GcBnVxb1hyyiJCgcGPiVIq5rSla/Nfmc+dK88/IuXvlxLCx4YpU5Ih7w==", "post"=>{"title"=>"test", "body"=>"test", "topic"=>"test"}, "commit"=>"Create Post"}
+Unpermitted parameter: :topic
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:17
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/posts_controller.rb:17
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 33ms (Views: 28.3ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2021-04-08 00:15:37 -0600
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"djcC6WTD13QiEkdLGHws2YGB1gdcdJxYZ/G5CEztbkODXPg+IxObwT6UhgM9VD3VZN7uWQDj58NJvFj5WxTz3w==", "post"=>{"title"=>"test", "body"=>"test", "topic"=>"1"}, "commit"=>"Create Post"}
+Unpermitted parameter: :topic
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:17
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/posts_controller.rb:17
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 59ms (Views: 54.4ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2021-04-08 00:16:10 -0600
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xCBQ2okbB1IvSZfLAttm+x4UbCmSzNran33Y6HZdPswxS6oNzstL5zPPVoMn83f3+0tUd85boUGxMDkZYaSjUA==", "post"=>{"title"=>"test", "body"=>"test", "topic"=>"1"}, "commit"=>"Create Post"}
+Unpermitted parameter: :topic
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:17
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/posts_controller.rb:17
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 34ms (Views: 29.4ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2021-04-08 00:16:14 -0600
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EhWqlW75Tdys6307Xlau8Ce3hV5rQsSKVIXJN9gMdXbnflBCKSkBabBtvHN7fr/8wui9ADfVvxF6yCjGz/Xo6g==", "post"=>{"title"=>"test", "body"=>"test", "topic_id"=>"test"}, "commit"=>"Create Post"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:17
+  [1m[36mTopic Load (0.5ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:17
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/posts_controller.rb:17
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 51ms (Views: 28.5ms | ActiveRecord: 8.3ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2021-04-08 00:16:22 -0600
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KdGLyw4aZip0DdzGgqjlqLtvJ442R2jMMr7wRHkaFzfcunEcScoqn2iLHY6ngPSkXjAf0GrQE1cc8xG1buOKqw==", "post"=>{"title"=>"test", "body"=>"test", "topic_id"=>"2"}, "commit"=>"Create Post"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:17
+  [1m[36mTopic Load (0.5ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:17
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/posts_controller.rb:17
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 42ms (Views: 35.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-04-08 00:16:38 -0600
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 27ms (Views: 26.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2021-04-08 00:16:40 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 33ms (Views: 31.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2021-04-08 00:16:51 -0600
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Q+el/IpdKhhjr0jjz502ntABN6napS9Qu/tCBVjG57LbznkPPPXr7hLG2Y1w6EE1cdJPuiiFGd5/SbVDUyYMfw==", "post"=>{"title"=>"this", "body"=>"better", "topic_id"=>"work"}, "commit"=>"Create Post"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:17
+  [1m[36mTopic Load (0.6ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:17
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/posts_controller.rb:17
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 44ms (Views: 36.4ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2021-04-08 00:16:55 -0600
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yp79ZKavery2/10BcitTyLwi8Rza+F1vs1McFUwnC4Q/9Qez4X82Cap5nElXA0LEWX3JQoZvJvSdHv3kW96WGA==", "post"=>{"title"=>"this", "body"=>"better", "topic_id"=>"1"}, "commit"=>"Create Post"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:17
+  [1m[36mTopic Load (0.6ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:17
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/posts_controller.rb:17
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 34ms (Views: 28.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/topics" for 127.0.0.1 at 2021-04-08 00:17:25 -0600
+Processing by TopicsController#index as HTML
+  Rendering topics/index.html.erb within layouts/application
+  Rendered topics/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 48ms (Views: 46.7ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+Started GET "/topics" for 127.0.0.1 at 2021-04-08 00:48:48 -0600
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Processing by TopicsController#index as HTML
+  Rendering topics/index.html.erb within layouts/application
+  Rendered topics/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 259ms (Views: 253.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/comments" for 127.0.0.1 at 2021-04-08 00:48:51 -0600
+Processing by CommentsController#index as HTML
+  Rendering comments/index.html.erb within layouts/application
+  Rendered comments/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 32ms (Views: 30.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-04-08 00:48:52 -0600
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 30ms (Views: 28.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2021-04-08 00:48:53 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (30.9ms)
+Completed 200 OK in 75ms (Views: 56.9ms | ActiveRecord: 3.8ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2021-04-08 00:49:00 -0600
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DSJmKPw0GhJHgAX5kwvyrtom+7kPrbUGtteNOf8bvGSVC7rbSpzb5DbplJcsfoUFe/WDqv2Ng4hyZXp/9PtXqQ==", "post"=>{"title"=>"t", "body"=>"t", "topic"=>"Overgrowth"}, "commit"=>"Create Post"}
+Unpermitted parameter: :topic
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:17
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/posts_controller.rb:17
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 53ms (Views: 27.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-04-08 00:49:21 -0600
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 22ms (Views: 21.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2021-04-08 00:49:23 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 32ms (Views: 30.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2021-04-08 00:49:30 -0600
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TcSLaNtN+f8XOu6z99bU92HeB/MNLJU2k8bT13XK3pzV7VebbeU4CWZTf91Io6NcwA1/4P8Mo7hXdCSRfio1UQ==", "post"=>{"title"=>"asdf", "body"=>"asdf", "topic_id"=>"Upper-body Affected"}, "commit"=>"Create Post"}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:17
+  [1m[36mTopic Load (0.7ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:17
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/posts_controller.rb:17
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 80ms (Views: 52.6ms | ActiveRecord: 8.8ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTopic Create (0.8ms)[0m  [1m[32mINSERT INTO "topics" ("title", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "Overgrowth"], ["created_at", "2021-04-08 06:50:58.860209"], ["updated_at", "2021-04-08 06:50:58.860209"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTopic Create (0.6ms)[0m  [1m[32mINSERT INTO "topics" ("title", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "Overgrowth"], ["created_at", "2021-04-08 06:52:33.773212"], ["updated_at", "2021-04-08 06:52:33.773212"]]
+  [1m[35m (3.4ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/posts" for 127.0.0.1 at 2021-04-08 00:52:55 -0600
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 258ms (Views: 253.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2021-04-08 00:52:58 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 53ms (Views: 31.6ms | ActiveRecord: 5.9ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2021-04-08 00:53:07 -0600
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"l3swO7ITT7H+4UGJ1PNiJVpzMegwUe7T2GB553g4b2APUuzIBLuOR4+I0OdrhhWO+6BJ+8Jx2F0c0o6hc9iErQ==", "post"=>{"title"=>"blop", "body"=>"boop", "topic_id"=>"Overgrowth"}, "commit"=>"Create Post"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:17
+  [1m[36mTopic Load (0.6ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:17
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/posts_controller.rb:17
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 58ms (Views: 28.0ms | ActiveRecord: 6.8ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-04-08 00:53:51 -0600
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 29ms (Views: 28.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2021-04-08 00:53:53 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (10.1ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `id' for :topic:Symbol):
+     8:     <%= f.label :body %>
+     9:     <%= f.text_area :body %>
+    10: 
+    11:     <%= f.select :topic.id, [ 'Overgrowth', 'Upper-body Affected', 'Lower-body affected' ], :prompt => 'Please Select One' %>
+    12: 
+    13: 
+    14:    
+  
+app/views/posts/new.html.erb:11:in `block in _app_views_posts_new_html_erb___700063564026476715_70095696710400'
+app/views/posts/new.html.erb:3:in `_app_views_posts_new_html_erb___700063564026476715_70095696710400'
+Started GET "/posts" for 127.0.0.1 at 2021-04-08 00:54:36 -0600
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 23ms (Views: 21.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/comments" for 127.0.0.1 at 2021-04-08 00:54:38 -0600
+Processing by CommentsController#index as HTML
+  Rendering comments/index.html.erb within layouts/application
+  Rendered comments/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 28ms (Views: 26.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2021-04-08 00:54:39 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 35ms (Views: 33.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2021-04-08 00:54:51 -0600
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Jt0FE8pL3TTQIVHbbWwb+OZHmsjh6jzlLMmIrycdiy++9NngfOMcwqFIwLXSGWxTR5Ti2xPKCmvoe3/pLP1g4g==", "post"=>{"title"=>"please", "body"=>"work", "topic"=>"Overgrowth"}, "commit"=>"Create Post"}
+Unpermitted parameter: :topic
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:17
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/posts_controller.rb:17
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 34ms (Views: 29.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/comments" for 127.0.0.1 at 2021-04-08 00:56:31 -0600
+Processing by CommentsController#index as HTML
+  Rendering comments/index.html.erb within layouts/application
+  Rendered comments/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 21ms (Views: 20.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2021-04-08 00:56:32 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 28ms (Views: 27.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2021-04-08 00:56:37 -0600
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8MgEml3NFGxHkFfaLQnUCIjDcINuPErGxJTvTQ4VgJFo4dhp62XVmjb5xrSSfKOjKRAIkJwcfEgAJhgLBfVrXA==", "post"=>{"title"=>"asdf", "body"=>"asdf", "topic_id"=>"Overgrowth"}, "commit"=>"Create Post"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:17
+  [1m[36mTopic Load (0.5ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:17
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/posts_controller.rb:17
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 38ms (Views: 32.0ms | ActiveRecord: 1.0ms)
+
+
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mTopic Create (0.8ms)[0m  [1m[32mINSERT INTO "topics" ("title", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "Overgrowth"], ["created_at", "2021-04-08 06:57:56.538009"], ["updated_at", "2021-04-08 06:57:56.538009"]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (2.9ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTopic Create (0.7ms)[0m  [1m[32mINSERT INTO "topics" ("title", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "Overgrowth"], ["created_at", "2021-04-08 06:58:37.210171"], ["updated_at", "2021-04-08 06:58:37.210171"]]
+  [1m[35m (3.5ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/posts" for 127.0.0.1 at 2021-04-08 00:58:52 -0600
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 263ms (Views: 258.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/comments" for 127.0.0.1 at 2021-04-08 00:58:54 -0600
+Processing by CommentsController#index as HTML
+  Rendering comments/index.html.erb within layouts/application
+  Rendered comments/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 31ms (Views: 29.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2021-04-08 00:58:55 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 58ms (Views: 36.9ms | ActiveRecord: 4.3ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2021-04-08 00:58:59 -0600
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CQd+gDXlcnpSpJf5YCPBiqqnr4NoQN0SeLzduSrfcQuRLqJzg02zjCPNBpffVrYhC3TXkJpg65y8Dir/IT+axg==", "post"=>{"title"=>"asdf", "body"=>"asdf", "topic_id"=>"Overgrowth"}, "commit"=>"Create Post"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:17
+  [1m[36mTopic Load (0.5ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:17
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/posts_controller.rb:17
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 52ms (Views: 27.8ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-04-08 00:59:18 -0600
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 26ms (Views: 25.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2021-04-08 00:59:20 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 34ms (Views: 32.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2021-04-08 00:59:31 -0600
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"f1VdWVhjAK4NoYiFUKcuj2Uj6GHh/qk8o64rHjk8YnXnfIGq7svBWHzIGevv0lkkxPCQchPen7JnHNxYMtyJuA==", "post"=>{"title"=>"testing", "body"=>"testing still", "topic_id"=>"5 - Overgrowth"}, "commit"=>"Create Post"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:17
+  [1m[36mTopic Load (0.4ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:17
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/posts_controller.rb:17
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 46ms (Views: 26.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-04-08 00:59:42 -0600
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 44ms (Views: 43.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2021-04-08 00:59:43 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 30ms (Views: 29.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2021-04-08 00:59:47 -0600
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TjHo+8sWSZjVdRoeGlUljKDY8Jx2GKBzt8IpIu/nqmfWGDQIfb6IbqQci3ClIFInAQuIj4Q4lv1zcN5k5AdBqg==", "post"=>{"title"=>"asdf", "body"=>"asdf", "topic_id"=>"5"}, "commit"=>"Create Post"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:17
+  [1m[36mTopic Load (0.5ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:17
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/posts_controller.rb:17
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 46ms (Views: 37.5ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-04-08 01:01:18 -0600
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 30ms (Views: 28.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2021-04-08 01:01:20 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 30ms (Views: 28.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2021-04-08 01:01:26 -0600
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7JGFz+5ArlQU9VnhXSLZtOIvCKGwSz/n40m71AxzhOJ0uFk8WOhvomWcyI/iV64fQ/xwskJrCWkn+0ySB5NvLw==", "post"=>{"title"=>"", "body"=>"", "topic_id"=>"Lymphatic Malformations"}, "commit"=>"Create Post"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:17
+  [1m[36mTopic Load (0.8ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:17
+  [1m[35m (0.5ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/posts_controller.rb:17
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 50ms (Views: 39.3ms | ActiveRecord: 1.5ms)
+
+
