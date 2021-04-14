@@ -32,7 +32,7 @@ ActiveRecord::Schema.define(version: 2021_02_24_030535) do
     t.string "title"
     t.string "body"
     t.integer "user_id"
-    t.integer "topic_id"
+    t.string "topic_title"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

@@ -25,6 +25,7 @@ class PostsController < ApplicationController
     private
 
     def post_params
-      params.require(:post).permit(:title, :body, :user_id, :topic_id, :post_id)
+      params.require(:post).permit(:title, :body, :user_id, :topic_id, :post_id, :topic)
+      @topic_id = Topic.find_by(title: params[:title])
     end
 end
