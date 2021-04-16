@@ -15486,3 +15486,735 @@ Processing by PostsController#create as HTML
 Completed 200 OK in 768ms (Views: 525.8ms | ActiveRecord: 6.9ms)
 
 
+Started GET "/" for 127.0.0.1 at 2021-04-15 06:37:07 -0600
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 191ms (Views: 184.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-04-15 06:37:09 -0600
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 31ms (Views: 30.0ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2021-04-15 06:37:12 -0600
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"jy4gLPaWXzvNnYI6scWPiWupj1nU4SbLRakBR6LjvTJ6Rdr7sUYTjtEbQ3KU7Z6Fjva3B4h2XVBr5OC2tRogrg=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-15 06:37:12 -0600
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 26ms (Views: 24.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-04-15 06:37:19 -0600
+Processing by PostsController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :redirect_if_not_logged_in rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-15 06:37:19 -0600
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 32ms (Views: 30.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-04-15 06:37:27 -0600
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 44ms (Views: 43.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-04-15 06:37:29 -0600
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dBTsw+eYp6XJlavcmLyoj7N6m144/i8sVEXw/cqVHWHY7tkfbfyoodi6mUUfCs6w+8eMRvRiUKgF3h0PM3iTXQ==", "user"=>{"email"=>"email@email.com", "password"=>"[FILTERED]"}, "commit"=>"Log Me In!"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "email@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:15
+Redirected to http://localhost:3000/login
+Completed 302 Found in 22ms (ActiveRecord: 4.5ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-04-15 06:37:29 -0600
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 38ms (Views: 36.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-04-15 06:37:34 -0600
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DfIxYpohvz4ZNjIkmUJQZ45u+VxwjPngBEiIXTEZ+rv4mcu13fHziwWw82y8akFrazHBAiwbgnsqBWmsJuBnJw==", "user"=>{"email"=>"mruhaak@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Log Me In!"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "mruhaak@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:15
+Redirected to http://localhost:3000/login
+Completed 302 Found in 4ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-04-15 06:37:34 -0600
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 31ms (Views: 29.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-04-15 06:37:43 -0600
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"O7+1Zo2Uy79xaF7+NKV4HFtE1QchKYxdwAPhEKIkp0vO1E+xykSHCm3un7YRjWkQvhvtWX2+98buTgDhtd061w==", "user"=>{"email"=>"spiderman@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Log Me In!"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "spiderman@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:15
+Redirected to http://localhost:3000/login
+Completed 302 Found in 3ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-04-15 06:37:43 -0600
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 34ms (Views: 33.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-16 12:30:09 -0600
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 206ms (Views: 200.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-04-16 12:30:14 -0600
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (12.6ms)
+Completed 200 OK in 38ms (Views: 35.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-04-16 12:30:18 -0600
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5FkaDmTduafo77UMdlzhMfm8VgNfvIJaILVD4R2frghIoy/S7rm2o/nAh5Xx6ocOsQFBG5Mg/d5xLq4T5HIgNA==", "user"=>{"email"=>"email@email.com", "password"=>"[FILTERED]"}, "commit"=>"Log Me In!"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "email@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:15
+Redirected to http://localhost:3000/login
+Completed 302 Found in 17ms (ActiveRecord: 5.2ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-04-16 12:30:18 -0600
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 33ms (Views: 31.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-04-16 12:30:25 -0600
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xakBbQHkprmOg8WwtZ1thkHE1JIiWwgSxWD7b0DXosswwvu6RjTqDJIFBPiQtXyKpJvszH7Mc4nrLRqeVy4/Vw==", "user"=>{"email"=>"mruhaak@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Log Me In!"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "mruhaak@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:15
+Redirected to http://localhost:3000/login
+Completed 302 Found in 3ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-04-16 12:30:25 -0600
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 34ms (Views: 32.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2021-04-16 12:30:39 -0600
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 64ms (Views: 40.2ms | ActiveRecord: 7.1ms)
+
+
+Started POST "/signup" for 127.0.0.1 at 2021-04-16 12:31:12 -0600
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yulJcUWewD1EnTqGFPDLwMvqOCsb4iMTtUGbvzqoWnJenBis9hobyoLiKthntcYoWjWqYgLQH33EiEMXiUCpdg==", "user"=>{"user_name"=>"user", "password"=>"[FILTERED]", "email"=>"aaaa@aaaa.com", "first_name"=>"Bob", "last_name"=>"Bobert", "affected_person"=>"none", "location"=>"usa"}, "commit"=>"Sign Up"}
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:9
+  [1m[36mUser Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "aaaa@aaaa.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."user_name" = $1 LIMIT $2[0m  [["user_name", "user"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9
+  [1m[36mUser Create (32.3ms)[0m  [1m[32mINSERT INTO "users" ("user_name", "first_name", "last_name", "affected_person", "email", "location", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["user_name", "user"], ["first_name", "Bob"], ["last_name", "Bobert"], ["affected_person", "none"], ["email", "aaaa@aaaa.com"], ["location", "usa"], ["password_digest", "$2a$12$m1mYul0q9KQrRKaZZPrGwOQVbHbJaf6NAji0MNif/vpSfdx1lTTqO"], ["created_at", "2021-04-16 18:31:12.316591"], ["updated_at", "2021-04-16 18:31:12.316591"]]
+  ↳ app/controllers/users_controller.rb:9
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:9
+Completed 500 Internal Server Error in 311ms (ActiveRecord: 34.9ms)
+
+
+  
+NoMethodError (undefined method `id' for :user:Symbol):
+  
+app/controllers/users_controller.rb:10:in `create'
+Started POST "/signup" for 127.0.0.1 at 2021-04-16 12:31:42 -0600
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yulJcUWewD1EnTqGFPDLwMvqOCsb4iMTtUGbvzqoWnJenBis9hobyoLiKthntcYoWjWqYgLQH33EiEMXiUCpdg==", "user"=>{"user_name"=>"user", "password"=>"[FILTERED]", "email"=>"aaaa@aaaa.com", "first_name"=>"Bob", "last_name"=>"Bobert", "affected_person"=>"none", "location"=>"usa"}, "commit"=>"Sign Up"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:9
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "aaaa@aaaa.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."user_name" = $1 LIMIT $2[0m  [["user_name", "user"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:9
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 321ms (Views: 31.6ms | ActiveRecord: 6.9ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-04-16 12:32:00 -0600
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 27ms (Views: 26.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-04-16 12:32:15 -0600
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BTT6/XZwln6qn2/wGrw+cr2XZmHqiqY/ixbD4ShgOe6pzs8h/BSZeruwXWmdClhN9SpxeSYW2bvajS4T0Y230g==", "user"=>{"email"=>"aaaa@aaaa.com", "password"=>"[FILTERED]"}, "commit"=>"Log Me In!"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "aaaa@aaaa.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:15
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 291ms (ActiveRecord: 6.9ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2021-04-16 12:32:15 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 50ms (Views: 19.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-04-16 12:35:05 -0600
+  
+SyntaxError (/home/michael/code/projects/mod3/four-leaf-clovers/app/controllers/posts_controller.rb:33: syntax error, unexpected end-of-input):
+  
+app/controllers/posts_controller.rb:33: syntax error, unexpected end-of-input
+Started GET "/users/1" for 127.0.0.1 at 2021-04-16 12:35:21 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 45ms (Views: 22.1ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-04-16 12:35:23 -0600
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 37ms (Views: 35.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/comments" for 127.0.0.1 at 2021-04-16 12:35:24 -0600
+Processing by CommentsController#index as HTML
+  Rendering comments/index.html.erb within layouts/application
+  Rendered comments/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 60ms (Views: 58.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/topics" for 127.0.0.1 at 2021-04-16 12:35:25 -0600
+Processing by TopicsController#index as HTML
+  Rendering topics/index.html.erb within layouts/application
+  Rendered topics/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 50ms (Views: 47.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2021-04-16 12:35:26 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (15.5ms)
+Completed 200 OK in 98ms (Views: 51.2ms | ActiveRecord: 12.7ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2021-04-16 12:35:37 -0600
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"URIbsznDAko6MVLQMhPZwcwopY3Jz54lQR9safB7p/TJO8dAj2vDvEtYw76NZq5qbfvdnjvvqKuFrZsv+5tMOQ==", "post"=>{"title"=>"asdf", "body"=>"asdft", "topic"=>"overgrowth"}, "commit"=>"Create Post"}
+  [1m[36mTopic Load (1.4ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."title" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:29
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:17
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/posts_controller.rb:17
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 108ms (Views: 81.3ms | ActiveRecord: 6.3ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-04-16 14:03:21 -0600
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 215ms (Views: 205.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2021-04-16 14:03:23 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (16.8ms)
+Completed 200 OK in 80ms (Views: 44.3ms | ActiveRecord: 8.8ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2021-04-16 14:03:46 -0600
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MvMcbyuo02vT18N4oGtmpTkbfQCA+/jpnbCGnR8V+R6q2sCcnQASnaK+UhYfHhEOmMgFE3LbzmdZAnHbFPUS0w==", "post"=>{"title"=>"Post Title", "body"=>"Post body test", "topic"=>"First_topic"}, "commit"=>"Create Post"}
+  [1m[36mTopic Load (0.7ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."title" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:29
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:17
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/posts_controller.rb:17
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 56ms (Views: 34.7ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-04-16 14:07:02 -0600
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 38ms (Views: 36.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2021-04-16 14:07:03 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 59ms (Views: 32.1ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/comments" for 127.0.0.1 at 2021-04-16 14:07:05 -0600
+Processing by CommentsController#index as HTML
+  Rendering comments/index.html.erb within layouts/application
+  Rendered comments/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 41ms (Views: 40.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/topics" for 127.0.0.1 at 2021-04-16 14:07:05 -0600
+Processing by TopicsController#index as HTML
+  Rendering topics/index.html.erb within layouts/application
+  Rendered topics/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 58ms (Views: 56.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2021-04-16 14:07:06 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 48ms (Views: 46.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2021-04-16 14:07:09 -0600
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oG60AYJ6tVW2yM3cKR5J7SwPqMFbNlSPGw/hkT1U8B84R2jyNNJ0o8ehXLKWaz5GjdzQ0qkWYgHfvRbXNrQb0g==", "post"=>{"title"=>"asdf", "body"=>"asdf", "topic"=>"asdf"}, "commit"=>"Create Post"}
+  [1m[36mTopic Load (0.5ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."title" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:29
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:17
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/posts_controller.rb:17
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 64ms (Views: 42.2ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-16 15:22:28 -0600
+Started GET "/" for 127.0.0.1 at 2021-04-16 15:22:28 -0600
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.5/lib/active_record/log_subscriber.rb:98
+  [1m[35m (2.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.5/lib/active_record/log_subscriber.rb:98
+Processing by SessionsController#welcome as HTML
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (1.7ms)
+  Rendered sessions/welcome.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 423ms (Views: 415.6ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 426ms (Views: 423.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2021-04-16 15:22:34 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (32.5ms)
+Completed 200 OK in 129ms (Views: 89.0ms | ActiveRecord: 8.3ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-04-16 15:22:35 -0600
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 73ms (Views: 71.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2021-04-16 15:22:36 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 66ms (Views: 65.1ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2021-04-16 15:22:40 -0600
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"WDByws-Rm3jXLf5E9sXRDKqK8xB0ZCM3a1Uyd8z5ABGtW4gViEHXzcurPwzT7cAAT9XLTijzWKxFGNOG2wCdjQ"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-16 15:22:40 -0600
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 35ms (Views: 34.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-04-16 15:22:41 -0600
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 50ms (Views: 47.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-04-16 15:22:44 -0600
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OAtgS92YmsNYaOZ-iLb5JTup2Q5XzAEffSqOY0UHJN-U8VWXV_yVx0lH1OcPAJ8acxTOFptQfpsssWORvOqq4w", "user"=>{"email"=>"aaaa@aaaa.com", "password"=>"[FILTERED]"}, "commit"=>"Log Me In!"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "aaaa@aaaa.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:15
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 299ms (ActiveRecord: 5.5ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2021-04-16 15:22:44 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 25ms (Views: 22.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2021-04-16 16:00:45 -0600
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.5/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 300ms (Views: 269.1ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/topics/new" for 127.0.0.1 at 2021-04-16 16:00:47 -0600
+Processing by TopicsController#new as HTML
+  Rendering topics/new.html.erb within layouts/application
+  Rendered topics/new.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 66ms (Views: 38.6ms | ActiveRecord: 11.9ms)
+
+
+Started POST "/topics" for 127.0.0.1 at 2021-04-16 16:01:00 -0600
+Processing by TopicsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"w27bVkedz3X5TifFa7G25SUz9_dn5R8AUrp7IC06cq1YjTFj-wVXZLtrBFHB2d9ekDtfZL_i8xL9mxpcYyjSKw", "topic"=>{"title"=>"Test Topic"}, "commit"=>"Create Topic"}
+Unpermitted parameter: :title
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/topics_controller.rb:10
+  [1m[35m (0.5ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/topics_controller.rb:10
+  Rendering topics/new.html.erb within layouts/application
+  Rendered topics/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 49ms (Views: 39.9ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/topics" for 127.0.0.1 at 2021-04-16 16:01:38 -0600
+Processing by TopicsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ugx-bGoDU9nKTlhi1q7ecR2BO6kPRoEO-fl3taIyIwVPZ4S7LdMfbNbImSrzhs99-N4D91PR-pXXtJZEtcu-mQ", "topic"=>{"title"=>"Test Topic"}, "commit"=>"Create Topic"}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/topics_controller.rb:10
+  [1m[36mTopic Create (15.0ms)[0m  [1m[32mINSERT INTO "topics" ("title", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "Test Topic"], ["created_at", "2021-04-16 22:01:38.652501"], ["updated_at", "2021-04-16 22:01:38.652501"]]
+  ↳ app/controllers/topics_controller.rb:10
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/topics_controller.rb:10
+Redirected to http://localhost:3000/topics
+Completed 302 Found in 41ms (ActiveRecord: 25.4ms)
+
+
+Started GET "/topics" for 127.0.0.1 at 2021-04-16 16:01:38 -0600
+Processing by TopicsController#index as HTML
+  Rendering topics/index.html.erb within layouts/application
+  Rendered topics/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 40ms (Views: 39.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/topics" for 127.0.0.1 at 2021-04-16 16:01:47 -0600
+Processing by TopicsController#index as HTML
+  Rendering topics/index.html.erb within layouts/application
+  Rendered topics/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 31ms (Views: 30.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-04-16 16:02:45 -0600
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 40ms (Views: 38.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2021-04-16 16:02:46 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 78ms (Views: 44.8ms | ActiveRecord: 5.8ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2021-04-16 16:02:57 -0600
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9CzjUXDYM_2Jlv9D99-EJaplBot0KbqCu-emNYDcuTBsBT-ixnDyC_j_bi1IqvOOC7Z-mIYJjAx_VVFzizxS_Q", "post"=>{"title"=>"test", "body"=>"test", "topic"=>"Test topic"}, "commit"=>"Create Post"}
+  [1m[36mTopic Load (0.8ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."title" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:29
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:17
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/posts_controller.rb:17
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 75ms (Views: 58.7ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/topics" for 127.0.0.1 at 2021-04-16 16:03:31 -0600
+Processing by TopicsController#index as HTML
+  Rendering topics/index.html.erb within layouts/application
+  Rendered topics/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 28ms (Views: 27.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/topics" for 127.0.0.1 at 2021-04-16 16:16:40 -0600
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.5/lib/active_record/log_subscriber.rb:98
+Processing by TopicsController#index as HTML
+  Rendering topics/index.html.erb within layouts/application
+  Rendered topics/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 240ms (Views: 234.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/topics/new" for 127.0.0.1 at 2021-04-16 16:16:43 -0600
+Processing by TopicsController#new as HTML
+  Rendering topics/new.html.erb within layouts/application
+  Rendered topics/new.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 55ms (Views: 32.6ms | ActiveRecord: 5.6ms)
+
+
+Started POST "/topics" for 127.0.0.1 at 2021-04-16 16:16:48 -0600
+Processing by TopicsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZewEWSLyrSEjSBevkkUfOS9HDW-oOiWeRmaqbquaqxr-D-5snmo1MGFtNDs4LXaCmk-l_HA9yYzpR8sS5YgLnA", "topic"=>{"title"=>"Test Topic"}, "commit"=>"Create Topic"}
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/topics_controller.rb:10
+  [1m[36mTopic Exists (1.4ms)[0m  [1m[34mSELECT  1 AS one FROM "topics" WHERE "topics"."title" = $1 LIMIT $2[0m  [["title", "Test Topic"], ["LIMIT", 1]]
+  ↳ app/controllers/topics_controller.rb:10
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/topics_controller.rb:10
+  Rendering topics/new.html.erb within layouts/application
+  Rendered topics/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 56ms (Views: 43.9ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-16 16:36:56 -0600
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 31ms (Views: 29.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/comments" for 127.0.0.1 at 2021-04-16 16:36:59 -0600
+Processing by CommentsController#index as HTML
+  Rendering comments/index.html.erb within layouts/application
+  Rendered comments/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 34ms (Views: 26.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-04-16 16:37:03 -0600
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 47ms (Views: 44.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/topics" for 127.0.0.1 at 2021-04-16 16:37:04 -0600
+Processing by TopicsController#index as HTML
+  Rendering topics/index.html.erb within layouts/application
+  Rendered topics/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 38ms (Views: 36.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/topics" for 127.0.0.1 at 2021-04-16 16:38:35 -0600
+Processing by TopicsController#index as HTML
+  Rendering topics/index.html.erb within layouts/application
+  Rendered topics/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 44ms (Views: 40.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/topics" for 127.0.0.1 at 2021-04-16 16:38:36 -0600
+Processing by TopicsController#index as HTML
+  Rendering topics/index.html.erb within layouts/application
+  Rendered topics/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 37ms (Views: 35.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-04-16 17:44:09 -0600
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.5/lib/active_record/log_subscriber.rb:98
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 218ms (Views: 212.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-04-16 17:44:11 -0600
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 25ms (Views: 24.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/comments" for 127.0.0.1 at 2021-04-16 17:44:13 -0600
+Processing by CommentsController#index as HTML
+  Rendering comments/index.html.erb within layouts/application
+  Rendered comments/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 46ms (Views: 37.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/comments" for 127.0.0.1 at 2021-04-16 17:44:16 -0600
+Processing by CommentsController#index as HTML
+  Rendering comments/index.html.erb within layouts/application
+  Rendered comments/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 35ms (Views: 34.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/comments" for 127.0.0.1 at 2021-04-16 17:44:17 -0600
+Processing by CommentsController#index as HTML
+  Rendering comments/index.html.erb within layouts/application
+  Rendered comments/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 35ms (Views: 31.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/topics" for 127.0.0.1 at 2021-04-16 17:44:18 -0600
+Processing by TopicsController#index as HTML
+  Rendering topics/index.html.erb within layouts/application
+  Rendered topics/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 23ms (Views: 22.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/comments" for 127.0.0.1 at 2021-04-16 17:44:20 -0600
+Processing by CommentsController#index as HTML
+  Rendering comments/index.html.erb within layouts/application
+  Rendered comments/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 25ms (Views: 23.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/topics/new" for 127.0.0.1 at 2021-04-16 17:44:21 -0600
+Processing by TopicsController#new as HTML
+  Rendering topics/new.html.erb within layouts/application
+  Rendered topics/new.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 70ms (Views: 45.4ms | ActiveRecord: 6.9ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2021-04-16 17:44:39 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (36.7ms)
+Completed 200 OK in 105ms (Views: 63.2ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-04-16 17:44:41 -0600
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 48ms (Views: 46.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2021-04-16 17:44:42 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 33ms (Views: 31.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/topics" for 127.0.0.1 at 2021-04-16 17:44:45 -0600
+Processing by TopicsController#index as HTML
+  Rendering topics/index.html.erb within layouts/application
+  Rendered topics/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 29ms (Views: 27.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/comments" for 127.0.0.1 at 2021-04-16 17:44:47 -0600
+Processing by CommentsController#index as HTML
+  Rendering comments/index.html.erb within layouts/application
+  Rendered comments/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 23ms (Views: 20.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-04-16 17:45:09 -0600
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 47ms (Views: 45.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-04-16 17:45:11 -0600
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 39ms (Views: 37.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2021-04-16 17:45:13 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 39ms (Views: 37.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-04-16 17:45:14 -0600
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 24ms (Views: 22.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2021-04-16 17:45:16 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 54ms (Views: 52.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-04-16 17:45:17 -0600
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 34ms (Views: 32.2ms | ActiveRecord: 0.0ms)
+
+

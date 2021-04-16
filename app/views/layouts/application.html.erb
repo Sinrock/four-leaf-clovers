@@ -17,12 +17,19 @@
       <%= link_to "View All Posts", posts_path %> |
       <%= link_to "View Comments", comments_path %> |
       <%= link_to "Browse a Topic", topics_path %> |
+      <%= link_to "Create a Topic", '/topics/new' %> |
       <%= link_to "Log Out", logout_path, method: "delete" %>
       <% else %>
       <%= link_to "Sign Up", signup_path %> |
       <%= link_to "Login", login_path %>
       <% end %>
     
+    </div>
+    <% if flash[:error] %>
+      <%= flash[:error] %>
+      <% end %>
+    <div>
+
     </div>
     <%= yield %>
   </body>

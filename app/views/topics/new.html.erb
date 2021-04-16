@@ -1,0 +1,10 @@
+<h1>Create a New Topic</h1>
+
+<%= form_for(@topic) do |f| %>
+
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+   
+    <%= f.submit %>
+
+<% end %>

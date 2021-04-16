@@ -28,4 +28,5 @@ class PostsController < ApplicationController
       params.require(:post).permit(:title, :body, :user_id, :topic_id, :post_id, :topic)
       @topic_id = Topic.find_by(title: params[:title])
     end
+
 end
