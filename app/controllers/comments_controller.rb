@@ -4,13 +4,18 @@ class CommentsController < ApplicationController
         if params[:post_id] && @post = Post.find_by_id(params[:post_id])
             @comments = @post.comments
         else
-            flash[:error] = "That post doesn't exist yet!"
+            @error = "That post doesn't exist yet!" if params[:post_id]
             @comments = Comment.all
         end
     end
 
     def new
-        @comment = Comment.new
+        if params[:post_id] && @post = Post.find_by_id(params[:post_id])
+            @comment = @post.comments.build
+        else
+            @error = "That post doesn't exist yet!" if params[:post_id]
+            @comment = Comment.new
+        end
     end
 
     def create

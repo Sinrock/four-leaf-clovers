@@ -1,2 +1,15 @@
 <h1>Posts Show page</h1>
+
 <h1><%= @post.title %></h1>
+<h2>By: <%= @post.user.user_name %></h2>
+
+<div>
+<%= @post.body %>
+</div>
+
+<p><%= link_to 'Add a new comment', new_post_comment_path(@post) %></p>
+
+<h4>Comments:</h4>
+<% @post.comments.each do |c| %>
+<li><strong><%= c.user.user_name %></strong> said "<%= link_to c.content, comment_path(c) %>"</li>
+<% end %>
