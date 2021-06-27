@@ -12,7 +12,7 @@ class TopicsController < ApplicationController
       def create
         @topic = Topic.new(topic_params)
         if @topic.save
-          redirect_to '/topics'
+          redirect_to @topic
         else
             flash[:error] = "That topic already exists, silly goose!"
           render :new
