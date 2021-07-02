@@ -2,7 +2,7 @@ class TopicsController < ApplicationController
     before_action :redirect_if_not_logged_in
 
     def index
-        @comments = Comment.all
+        @topics = Topic.all
     end
     
     def new
@@ -22,6 +22,7 @@ class TopicsController < ApplicationController
 
 
     def show
+      @topics = Topic.all
     end
 
     private

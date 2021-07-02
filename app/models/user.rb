@@ -2,7 +2,7 @@ class User < ApplicationRecord
     has_secure_password
 
     has_many :posts, dependent: :destroy
-    has_many :topics, :through => :posts
+    has_many :topics
 
     has_many :comments
     #has_many :commented_posts, :through => :comments, source: :post

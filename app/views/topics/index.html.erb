@@ -1,1 +1,9 @@
 <h1>Browse All Topics</h1>
+
+<ul>
+  <% @topics.each do |topic| %>
+    <li>
+      <%= topic.title %>
+    </li>
+  <% end %>
+</ul>

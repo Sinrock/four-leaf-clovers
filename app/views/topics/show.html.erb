@@ -1,6 +1,7 @@
 <h1>Topics Show page</h1>
 
-list of topics goes here...
-
-
-<h1><%= @topic %></h1>
+<% @topics.each do |topic| %>
+    <li>
+      <%= topic.title %>
+    </li>
+  <% end %>

@@ -4,16 +4,15 @@
 
     <%= f.label :title %>
     <%= f.text_field :title %>
-
+<br>
+<br>
     <%= f.label :body %>
     <%= f.text_area :body %>
-
-    <%= f.label :topic %>
-    <%= f.text_field :topic %>
-
-
-   
+<br>
+<br>
+    <%= f.select :topic, [Topic.select(:title)] %>
 
     <%= f.submit %>
 
 <% end %>
+

@@ -2,6 +2,7 @@ class PostsController < ApplicationController
   before_action :redirect_if_not_logged_in
 
     def index
+      @posts = Post.all
     end
     
     def show
@@ -25,8 +26,7 @@ class PostsController < ApplicationController
     private
 
     def post_params
-      params.require(:post).permit(:title, :body, :user_id, :post_id, :topic, :topic_id)
-      @topic_id = Topic.find_by(title: params[:title])
+      params.require(:post).permit(:title, :body, :user_id, :topic)
     end
 
 end

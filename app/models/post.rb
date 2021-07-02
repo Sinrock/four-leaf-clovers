@@ -9,4 +9,6 @@ class Post < ApplicationRecord
     #has_many :topics, :through => :post_topics
 
     validates :title, :body, presence: true
+
+    
 end

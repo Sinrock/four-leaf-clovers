@@ -17709,3 +17709,3178 @@ Processing by TopicsController#index as HTML
 Completed 200 OK in 22ms (Views: 21.0ms | ActiveRecord: 0.0ms)
 
 
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(584177703887606325)[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(584177703887606325)[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(584177703887606325)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(584177703887606325)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/" for 127.0.0.1 at 2021-06-29 22:49:38 -0600
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 280ms (Views: 274.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/comments" for 127.0.0.1 at 2021-06-29 22:49:41 -0600
+Processing by CommentsController#index as HTML
+  Rendering comments/index.html.erb within layouts/application
+  Rendered comments/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 80ms (Views: 72.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-06-29 22:49:41 -0600
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 37ms (Views: 35.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/topics" for 127.0.0.1 at 2021-06-29 22:49:42 -0600
+Processing by TopicsController#index as HTML
+  Rendering topics/index.html.erb within layouts/application
+  Rendered topics/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 29ms (Views: 28.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/topics/new" for 127.0.0.1 at 2021-06-29 22:49:44 -0600
+Processing by TopicsController#new as HTML
+  Rendering topics/new.html.erb within layouts/application
+  Rendered topics/new.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 63ms (Views: 43.4ms | ActiveRecord: 5.5ms)
+
+
+Started POST "/topics" for 127.0.0.1 at 2021-06-29 22:50:14 -0600
+Processing by TopicsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wjLHu3eEpD0TCObLFMbwdc73gPiFtjSgz4B4lCiteyBZ0S2Oyxw8LFEtxV++rpnOe/8oa12x2LJgoRnoZr/bpg==", "topic"=>{"title"=>"topictest"}, "commit"=>"Create Topic"}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/topics_controller.rb:14
+  [1m[36mTopic Exists (1.4ms)[0m  [1m[34mSELECT  1 AS one FROM "topics" WHERE "topics"."title" = $1 LIMIT $2[0m  [["title", "topictest"], ["LIMIT", 1]]
+  ↳ app/controllers/topics_controller.rb:14
+  [1m[36mTopic Create (0.7ms)[0m  [1m[32mINSERT INTO "topics" ("title", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "topictest"], ["created_at", "2021-06-30 04:50:14.798037"], ["updated_at", "2021-06-30 04:50:14.798037"]]
+  ↳ app/controllers/topics_controller.rb:14
+  [1m[35m (3.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/topics_controller.rb:14
+Redirected to http://localhost:3000/topics/5
+Completed 302 Found in 17ms (ActiveRecord: 5.8ms)
+
+
+Started GET "/topics/5" for 127.0.0.1 at 2021-06-29 22:50:14 -0600
+Processing by TopicsController#show as HTML
+  Parameters: {"id"=>"5"}
+  Rendering topics/show.html.erb within layouts/application
+  Rendered topics/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 69ms (Views: 67.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-06-29 22:50:19 -0600
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 29ms (Views: 28.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-29 22:50:20 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 71ms (Views: 48.2ms | ActiveRecord: 2.7ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2021-06-29 22:50:36 -0600
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wY3pYkxDVYHjuzhy5S+gnRnRGyYCrYO0CTbV8UoPkZlZpDWR+uuUd5LSqRxaWtc2uAJjNfCNtTrNhCK3Qe96VA==", "post"=>{"title"=>"first post of new batch", "body"=>"hope this works", "topic"=>"topictest"}, "commit"=>"Create Post"}
+  [1m[36mTopic Load (0.4ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."title" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:29
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:17
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/posts_controller.rb:17
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 50ms (Views: 34.5ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-06-29 22:54:06 -0600
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 461ms (Views: 453.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-06-29 22:54:23 -0600
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 59ms (Views: 58.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/topics/new" for 127.0.0.1 at 2021-06-29 22:54:26 -0600
+Processing by TopicsController#new as HTML
+  Rendering topics/new.html.erb within layouts/application
+  Rendered topics/new.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 43ms (Views: 30.3ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/topics" for 127.0.0.1 at 2021-06-29 22:54:27 -0600
+Processing by TopicsController#index as HTML
+  Rendering topics/index.html.erb within layouts/application
+  Rendered topics/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 48ms (Views: 41.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/comments" for 127.0.0.1 at 2021-06-29 22:54:29 -0600
+Processing by CommentsController#index as HTML
+  Rendering comments/index.html.erb within layouts/application
+  Rendered comments/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 38ms (Views: 36.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/topics" for 127.0.0.1 at 2021-06-29 22:54:31 -0600
+Processing by TopicsController#index as HTML
+  Rendering topics/index.html.erb within layouts/application
+  Rendered topics/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 36ms (Views: 35.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/topics/new" for 127.0.0.1 at 2021-06-29 22:54:36 -0600
+Processing by TopicsController#new as HTML
+  Rendering topics/new.html.erb within layouts/application
+  Rendered topics/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 33ms (Views: 31.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/topics" for 127.0.0.1 at 2021-06-29 22:54:45 -0600
+Processing by TopicsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NuUCJYsf+tb2bt2l/M79ob0sHOyI6DUs6seKK40dM/KtBugQN4dix7RL/jFWppQaCCS0f1Dv2T5F5utXww+TdA==", "topic"=>{"title"=>"newtopic"}, "commit"=>"Create Topic"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/topics_controller.rb:14
+  [1m[36mTopic Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "topics" WHERE "topics"."title" = $1 LIMIT $2[0m  [["title", "newtopic"], ["LIMIT", 1]]
+  ↳ app/controllers/topics_controller.rb:14
+  [1m[36mTopic Create (0.6ms)[0m  [1m[32mINSERT INTO "topics" ("title", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "newtopic"], ["created_at", "2021-06-30 04:54:45.349162"], ["updated_at", "2021-06-30 04:54:45.349162"]]
+  ↳ app/controllers/topics_controller.rb:14
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/topics_controller.rb:14
+Redirected to http://localhost:3000/topics/6
+Completed 302 Found in 8ms (ActiveRecord: 2.4ms)
+
+
+Started GET "/topics/6" for 127.0.0.1 at 2021-06-29 22:54:45 -0600
+Processing by TopicsController#show as HTML
+  Parameters: {"id"=>"6"}
+  Rendering topics/show.html.erb within layouts/application
+  Rendered topics/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 46ms (Views: 45.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-29 22:54:59 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 88ms (Views: 46.7ms | ActiveRecord: 16.5ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2021-06-29 22:55:15 -0600
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"R15QJZs/PVAO0myQkzXcl6vqGGlkyycjMFD2WHCZkpjfd4zWLZf8pn+7/f4sQKs8CjlgepbrEa304gEee3l5VQ==", "post"=>{"title"=>"Once upon a time", "body"=>"this won't work I bet", "topic"=>"newtopic"}, "commit"=>"Create Post"}
+  [1m[36mTopic Load (0.3ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."title" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:29
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:17
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/posts_controller.rb:17
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 88ms (Views: 56.4ms | ActiveRecord: 1.1ms)
+
+
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(584177703887606325)[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(584177703887606325)[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(584177703887606325)[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(584177703887606325)[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+Started GET "/posts" for 127.0.0.1 at 2021-06-29 23:36:30 -0600
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 424ms (Views: 416.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-29 23:36:32 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (17.9ms)
+Completed 200 OK in 76ms (Views: 52.6ms | ActiveRecord: 5.5ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2021-06-29 23:36:54 -0600
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cwYk1OzasQ67Ctsg/7uXfyCiMnsY+oyx418CtZLK6ivrL/gnWnJw+MpjSk5AzuDUgXFKaOrauj8n7fXzmSoB5g==", "post"=>{"title"=>"post test", "body"=>"testing", "topic"=>"newtopic"}, "commit"=>"Create Post"}
+  [1m[36mTopic Load (0.3ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."title" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:29
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:17
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/posts_controller.rb:17
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 57ms (Views: 38.3ms | ActiveRecord: 3.1ms)
+
+
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT pg_try_advisory_lock(584177703887606325)[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (9.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (3.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(584177703887606325)[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-29 23:38:29 -0600
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 251ms (Views: 226.2ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-06-29 23:38:34 -0600
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 55ms (Views: 53.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/comments" for 127.0.0.1 at 2021-06-29 23:38:36 -0600
+Processing by CommentsController#index as HTML
+  Rendering comments/index.html.erb within layouts/application
+  Rendered comments/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 27ms (Views: 23.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-29 23:38:37 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 34ms (Views: 33.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2021-06-29 23:38:50 -0600
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JS4YxT9zXSZoH6m8mPFsOWL9p9D8/55NlKYoo+84Hqi9B8Q2iduc0Bl2ONInhBuSwy7fww7fqMNQFN/l5Nj1ZQ==", "post"=>{"title"=>"stuff", "body"=>"stuff", "topic"=>"newtopic"}, "commit"=>"Create Post"}
+  [1m[36mTopic Load (0.4ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."title" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:29
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:17
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/posts_controller.rb:17
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 42ms (Views: 27.6ms | ActiveRecord: 2.2ms)
+
+
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(584177703887606325)[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(584177703887606325)[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-29 23:41:06 -0600
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (43.7ms)
+Completed 200 OK in 367ms (Views: 340.5ms | ActiveRecord: 4.0ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2021-06-29 23:41:21 -0600
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"koU2q/InFU442NeEQg8quxI8WrjIM6QrmMwa6HNxCOsKrOpYRI/UuEmxRur9el0Qs+8iqzoTkqVcfu2ueJHjJg==", "post"=>{"title"=>"asus", "body"=>"asus", "topic"=>"newtopic"}, "commit"=>"Create Post"}
+  [1m[36mTopic Load (2.2ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."title" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:29
+  [1m[35m (1.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:17
+  [1m[35m (1.8ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/posts_controller.rb:17
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (37.8ms)
+Completed 200 OK in 611ms (Views: 410.9ms | ActiveRecord: 13.1ms)
+
+
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(584177703887606325)[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(584177703887606325)[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-29 23:43:50 -0600
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (22.4ms)
+Completed 200 OK in 518ms (Views: 477.6ms | ActiveRecord: 4.4ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2021-06-29 23:44:02 -0600
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YsMG3ayLgdAUpwwBNrjmPuKMv7cS5xxlDnK3d7tvsh366touGiNAJmXOnW+JzZGVQ1/HpODHKuvKwEAxsI9Z0A==", "post"=>{"title"=>"test title", "body"=>"test body", "topic"=>"newtopic"}, "commit"=>"Create Post"}
+  [1m[36mTopic Load (0.4ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."title" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:29
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:17
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/posts_controller.rb:17
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 79ms (Views: 31.5ms | ActiveRecord: 2.7ms)
+
+
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(584177703887606325)[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(584177703887606325)[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-29 23:44:42 -0600
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (21.6ms)
+Completed 200 OK in 480ms (Views: 444.9ms | ActiveRecord: 4.8ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2021-06-29 23:44:53 -0600
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VJa45vLLtTErC00pXI6A26f3uPPB6ZPLBFQvjg0Jo+jMv2QVRGN0x1pi3Efj+/dwBiTA4DPJpUXA5tjIBulIJQ==", "post"=>{"title"=>"test title", "body"=>"test body", "topic"=>"newtopic"}, "commit"=>"Create Post"}
+  [1m[36mTopic Load (4.7ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."title" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:29
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:17
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/posts_controller.rb:17
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 81ms (Views: 28.2ms | ActiveRecord: 9.1ms)
+
+
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(584177703887606325)[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(584177703887606325)[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-29 23:45:19 -0600
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 258ms (Views: 232.8ms | ActiveRecord: 6.5ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2021-06-29 23:45:26 -0600
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PYwXpxPVb0qRX/3IaVEleOUyLL6gyYpIVoqfBCV5F6ylpctUpX2uvOA2bKbWJFLTROFUrVLpvMaSOGhCLpn8YQ==", "post"=>{"title"=>"test", "body"=>"test", "topic"=>"newtopic"}, "commit"=>"Create Post"}
+  [1m[36mTopic Load (0.4ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."title" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:29
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:17
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/posts_controller.rb:17
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 71ms (Views: 29.0ms | ActiveRecord: 2.6ms)
+
+
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(584177703887606325)[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT pg_advisory_unlock(584177703887606325)[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(584177703887606325)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(584177703887606325)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(584177703887606325)[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(584177703887606325)[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(584177703887606325)[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(584177703887606325)[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-29 23:48:29 -0600
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 309ms (Views: 280.7ms | ActiveRecord: 4.5ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2021-06-29 23:48:35 -0600
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TPWzm2BlQIW1nyI+8jQvHDpTBQthDjIh2naKD5FLAajU3G9o1s2Bc8T2s1BNQVi3m4B9GJMuBK8exH1JmqvqZQ==", "post"=>{"title"=>"test", "body"=>"test", "topic"=>"newtopic"}, "commit"=>"Create Post"}
+  [1m[36mTopic Load (0.4ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."title" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:29
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:17
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/posts_controller.rb:17
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 39ms (Views: 25.0ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-29 23:48:47 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 26ms (Views: 24.8ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(584177703887606325)[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (5.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(584177703887606325)[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-29 23:51:00 -0600
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (20.1ms)
+Completed 200 OK in 513ms (Views: 480.1ms | ActiveRecord: 4.1ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2021-06-29 23:51:07 -0600
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Afwc550b4u0pClqF7iQOEVdRt0IRs9zd1oabH4dyKc6Z1cAUK7MjG1hjy+tRUXm69oLPUeOT6lMSNGxZjJLCAw==", "post"=>{"title"=>"test", "body"=>"test", "topic"=>"newtopic"}, "commit"=>"Create Post"}
+  [1m[36mTopic Load (1.7ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."title" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:29
+  [1m[35m (1.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:17
+  [1m[35m (1.9ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/posts_controller.rb:17
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (49.4ms)
+Completed 200 OK in 540ms (Views: 368.5ms | ActiveRecord: 8.8ms)
+
+
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(584177703887606325)[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(584177703887606325)[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 00:10:59 -0600
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (12.9ms)
+Completed 200 OK in 310ms (Views: 284.4ms | ActiveRecord: 6.8ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2021-06-30 00:11:06 -0600
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Jev49SuHmtdLtQTB4p+ZEGZT9vAkoZlpbv1f2fjagu29wiQGnS9bITrcla9d6u67x4CO49aBr+eqT6if8zppIA==", "post"=>{"title"=>"test", "body"=>"test", "topic"=>"newtopic"}, "commit"=>"Create Post"}
+  [1m[36mTopic Load (0.5ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."title" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:29
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:17
+  [1m[35m (0.8ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/posts_controller.rb:17
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 126ms (Views: 83.8ms | ActiveRecord: 3.7ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2021-06-30 00:12:08 -0600
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lP8C1OjF3uUcFrMDgp56BDszMsh0oQUuWiPlYFkIom9hlPgDrxWSUACQckuntmsI3mwKlig2frV0bgSRTvE/8w==", "post"=>{"title"=>"test", "body"=>"test", "topic"=>""}, "commit"=>"Create Post"}
+  [1m[36mTopic Load (0.6ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."title" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:29
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:17
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/posts_controller.rb:17
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 71ms (Views: 60.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 00:12:13 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 26ms (Views: 24.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 00:19:03 -0600
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (22.8ms)
+Completed 200 OK in 302ms (Views: 263.2ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-06-30 00:19:05 -0600
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 66ms (Views: 64.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 00:19:07 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 27ms (Views: 25.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2021-06-30 00:19:20 -0600
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SY25mv4NqI0AY641FSisgal4BCOCL79hq4tokM5uXe7RpGVpSKVpe3EKP1uqXdsqCKt8MHAPie9vOZ/WxY62Iw==", "post"=>{"title"=>"test", "body"=>"test", "topic"=>"newtopic"}, "commit"=>"Create Post"}
+  [1m[36mTopic Load (0.5ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."title" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:29
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:17
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/posts_controller.rb:17
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 67ms (Views: 46.2ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 00:27:23 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (6.0ms)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 5.3ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 3, expected 4..6)):
+    11:     <%= f.label :topic %>
+    12:     <%= f.text_field :topic %>
+    13: 
+    14:     <%= f.collection_check_boxes :topic_titles, Topic.all, :title %>
+    15: 
+    16:     <%= f.submit %>
+    17: 
+  
+app/views/posts/new.html.erb:14:in `block in _app_views_posts_new_html_erb___2648701459882172867_70113303392280'
+app/views/posts/new.html.erb:3:in `_app_views_posts_new_html_erb___2648701459882172867_70113303392280'
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 00:27:49 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (3.2ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `all' for :Topic:Symbol):
+    11:     <%= f.label :topic %>
+    12:     <%= f.text_field :topic %>
+    13: 
+    14:     <%= f.collection_check_boxes :Topic.all %>
+    15: 
+    16:     <%= f.submit %>
+    17: 
+  
+app/views/posts/new.html.erb:14:in `block in _app_views_posts_new_html_erb___2648701459882172867_70113310011820'
+app/views/posts/new.html.erb:3:in `_app_views_posts_new_html_erb___2648701459882172867_70113310011820'
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 00:28:06 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (7.7ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `all' for :topic:Symbol):
+    11:     <%= f.label :topic %>
+    12:     <%= f.text_field :topic %>
+    13: 
+    14:     <%= f.collection_check_boxes :topic.all %>
+    15: 
+    16:     <%= f.submit %>
+    17: 
+  
+app/views/posts/new.html.erb:14:in `block in _app_views_posts_new_html_erb___2648701459882172867_70113231708520'
+app/views/posts/new.html.erb:3:in `_app_views_posts_new_html_erb___2648701459882172867_70113231708520'
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 00:28:16 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (2.9ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `all' for :@topic:Symbol):
+    11:     <%= f.label :topic %>
+    12:     <%= f.text_field :topic %>
+    13: 
+    14:     <%= f.collection_check_boxes :@topic.all %>
+    15: 
+    16:     <%= f.submit %>
+    17: 
+  
+app/views/posts/new.html.erb:14:in `block in _app_views_posts_new_html_erb___2648701459882172867_70113311421200'
+app/views/posts/new.html.erb:3:in `_app_views_posts_new_html_erb___2648701459882172867_70113311421200'
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 00:28:22 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (4.8ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `all' for nil:NilClass):
+    11:     <%= f.label :topic %>
+    12:     <%= f.text_field :topic %>
+    13: 
+    14:     <%= f.collection_check_boxes @topic.all %>
+    15: 
+    16:     <%= f.submit %>
+    17: 
+  
+app/views/posts/new.html.erb:14:in `block in _app_views_posts_new_html_erb___2648701459882172867_70113309467080'
+app/views/posts/new.html.erb:3:in `_app_views_posts_new_html_erb___2648701459882172867_70113309467080'
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 00:33:25 -0600
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 40ms (ActiveRecord: 4.9ms)
+
+
+  
+SyntaxError (/home/michael/code/projects/mod3/four-leaf-clovers/app/views/posts/new.html.erb:13: syntax error, unexpected '{', expecting ')'
+...end=( collection_select(:topic{:include_blank => 'None'},
+...                              ^
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/posts/new.html.erb:13: syntax error, unexpected '}', expecting ')'
+...topic{:include_blank => 'None'},
+...                              ^
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/posts/new.html.erb:14: syntax error, unexpected ')', expecting end
+...ame=>'topic',:selected => 0}) );@output_buffer.safe_append='
+...                              ^
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/posts/new.html.erb:20: syntax error, unexpected ensure, expecting end-of-input
+          ensure
+          ^~~~~~):
+  
+app/views/posts/new.html.erb:13: syntax error, unexpected '{', expecting ')'
+app/views/posts/new.html.erb:13: syntax error, unexpected '}', expecting ')'
+app/views/posts/new.html.erb:14: syntax error, unexpected ')', expecting end
+app/views/posts/new.html.erb:20: syntax error, unexpected ensure, expecting end-of-input
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 00:33:55 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/michael/code/projects/mod3/four-leaf-clovers/app/views/posts/new.html.erb:13: syntax error, unexpected '{', expecting ')'
+...end=( collection_select(:topic{:include_blank => 'None'}
+...                              ^
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/posts/new.html.erb:13: syntax error, unexpected '}', expecting ')'
+...topic{:include_blank => 'None'}
+...                              ^
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/posts/new.html.erb:14: syntax error, unexpected ')', expecting end
+...ame=>'topic',:selected => 0}) );@output_buffer.safe_append='
+...                              ^
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/posts/new.html.erb:20: syntax error, unexpected ensure, expecting end-of-input
+          ensure
+          ^~~~~~):
+  
+app/views/posts/new.html.erb:13: syntax error, unexpected '{', expecting ')'
+app/views/posts/new.html.erb:13: syntax error, unexpected '}', expecting ')'
+app/views/posts/new.html.erb:14: syntax error, unexpected ')', expecting end
+app/views/posts/new.html.erb:20: syntax error, unexpected ensure, expecting end-of-input
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 00:34:41 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/michael/code/projects/mod3/four-leaf-clovers/app/views/posts/new.html.erb:13: syntax error, unexpected '{', expecting ')'
+...end=( collection_select(:topic{:include_blank => 'None'}, {:...
+...                              ^
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/posts/new.html.erb:13: syntax error, unexpected '}', expecting ')'
+...topic{:include_blank => 'None'}, {:multiple => false, :name=...
+...                              ^
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/posts/new.html.erb:13: syntax error, unexpected ')', expecting end
+...ame=>'topic',:selected => 0}) );@output_buffer.safe_append='
+...                              ^
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/posts/new.html.erb:19: syntax error, unexpected ensure, expecting end-of-input
+          ensure
+          ^~~~~~):
+  
+app/views/posts/new.html.erb:13: syntax error, unexpected '{', expecting ')'
+app/views/posts/new.html.erb:13: syntax error, unexpected '}', expecting ')'
+app/views/posts/new.html.erb:13: syntax error, unexpected ')', expecting end
+app/views/posts/new.html.erb:19: syntax error, unexpected ensure, expecting end-of-input
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 00:36:10 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/michael/code/projects/mod3/four-leaf-clovers/app/views/posts/new.html.erb:13: syntax error, unexpected '{', expecting ')'
+...end=( collection_select(:topic{:include_blank => 'None', :mu...
+...                              ^
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/posts/new.html.erb:13: syntax error, unexpected ',', expecting ')'
+...topic{:include_blank => 'None', :multiple => false, :name =>...
+...                              ^
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/posts/new.html.erb:13: Can't assign to false
+...k => 'None', :multiple => false, :name => 'topic', :selected...
+...                          ^~~~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/posts/new.html.erb:13: syntax error, unexpected =>, expecting '.' or &. or :: or '['
+...', :multiple => false, :name => 'topic', :selected => 0}) );...
+...                             ^~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/posts/new.html.erb:13: syntax error, unexpected ',', expecting ')'
+...ple => false, :name => 'topic', :selected => 0}) );@output_b...
+...                              ^
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/posts/new.html.erb:17: syntax error, unexpected end, expecting ')'
+'.freeze; end 
+          ^~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/posts/new.html.erb:19: syntax error, unexpected ensure, expecting ')'
+          ensure
+          ^~~~~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/posts/new.html.erb:21: syntax error, unexpected end, expecting ')'
+          end
+          ^~~):
+  
+app/views/posts/new.html.erb:13: syntax error, unexpected '{', expecting ')'
+app/views/posts/new.html.erb:13: syntax error, unexpected ',', expecting ')'
+app/views/posts/new.html.erb:13: Can't assign to false
+app/views/posts/new.html.erb:13: syntax error, unexpected =>, expecting '.' or &. or :: or '['
+app/views/posts/new.html.erb:13: syntax error, unexpected ',', expecting ')'
+app/views/posts/new.html.erb:17: syntax error, unexpected end, expecting ')'
+app/views/posts/new.html.erb:19: syntax error, unexpected ensure, expecting ')'
+app/views/posts/new.html.erb:21: syntax error, unexpected end, expecting ')'
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 00:36:42 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (19.6ms)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 1, expected 5..7)):
+    10: 
+    11:     
+    12: 
+    13:     <%= collection_select(:topic) %>
+    14: 
+    15:     <%= f.submit %>
+    16: 
+  
+app/views/posts/new.html.erb:13:in `block in _app_views_posts_new_html_erb___951583168244531645_69957073722120'
+app/views/posts/new.html.erb:3:in `_app_views_posts_new_html_erb___951583168244531645_69957073722120'
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 00:37:20 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (2.3ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 2, expected 5..7)):
+    10: 
+    11:     
+    12: 
+    13:     <%= collection_select(:topic, :include_blank => 'None', :multiple => false, :name => 'topic', :selected => 0) %>
+    14: 
+    15:     <%= f.submit %>
+    16: 
+  
+app/views/posts/new.html.erb:13:in `block in _app_views_posts_new_html_erb___951583168244531645_69957068601200'
+app/views/posts/new.html.erb:3:in `_app_views_posts_new_html_erb___951583168244531645_69957068601200'
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 00:44:19 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (290.3ms)
+Completed 500 Internal Server Error in 293ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `form' for #<#<Class:0x00007f404cf6d900>:0x00007f404cfcf948>
+Did you mean?  for
+               fork):
+    11:     <%= f.label :topic %>
+    12:     <%= f.text_field :topic %>
+    13: 
+    14:     <%= form.select :topic, ["Topic 1", "Topic 2", "Topic 3"] %>
+    15: 
+    16:     <%= f.submit %>
+    17: 
+  
+app/views/posts/new.html.erb:14:in `block in _app_views_posts_new_html_erb___951583168244531645_69957073117420'
+app/views/posts/new.html.erb:3:in `_app_views_posts_new_html_erb___951583168244531645_69957073117420'
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 00:44:51 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (24.4ms)
+Completed 200 OK in 240ms (Views: 238.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 00:45:31 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 27ms (Views: 25.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2021-06-30 00:45:39 -0600
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"M9qCQ5tQxJ30mMhNSNprGzBg3H+l0dW3SNDn52U3guzGsXiU3ICIKOgeCQVt8noX1T/kIflGrixmnQYWcs4fcA==", "post"=>{"title"=>"test", "body"=>"test", "topic"=>"Newtopic"}, "commit"=>"Create Post"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveRecord::AssociationTypeMismatch (Topic(#69957073330680) expected, got "Newtopic" which is an instance of String(#46948603928040)):
+  
+app/controllers/posts_controller.rb:16:in `create'
+Started GET "/" for 127.0.0.1 at 2021-06-30 00:47:38 -0600
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 25ms (Views: 24.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 00:47:40 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 24ms (Views: 23.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2021-06-30 00:47:49 -0600
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xieT3Ahpuh4pgP7GXtW6+Hv7k6P0ghq+nENTaY7t5GBeDk8vvsF76Fjpb6jhoM1T2ijrsAaiLDBY8aQvhQ0PrQ==", "post"=>{"title"=>"test", "body"=>"tests", "topic"=>"newtopic"}, "commit"=>"Create Post"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveRecord::AssociationTypeMismatch (Topic(#69957073330680) expected, got "newtopic" which is an instance of String(#46948603928040)):
+  
+app/controllers/posts_controller.rb:16:in `create'
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 00:49:21 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 84ms (Views: 52.4ms | ActiveRecord: 10.3ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2021-06-30 00:49:27 -0600
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"h52J/RlfPSWLqkGVhQNd0p5XlhNDOog9S0QrHT7gMPty9nMqXo9xkJcsgN2gK0zeewiuTR+t86ZlCcrsKRmtZw==", "post"=>{"title"=>"test", "body"=>"test", "topic"=>"newtopic"}, "commit"=>"Create Post"}
+  [1m[36mTopic Load (0.7ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."title" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:29
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:17
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/posts_controller.rb:17
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 45ms (Views: 29.8ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-06-30 00:49:48 -0600
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 21ms (Views: 20.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 00:49:50 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 58ms (Views: 35.2ms | ActiveRecord: 8.8ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2021-06-30 00:49:56 -0600
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BYmguBE13+v8F+m/wrp+W37/rDMUBV0XTXWpWCq4BLWdoHxLp50eHY1+eNF9zwnw3yzUIOYla5mJx14eIVjveA==", "post"=>{"title"=>"test", "body"=>"testss", "topic"=>"newtopic"}, "commit"=>"Create Post"}
+  [1m[36mTopic Load (0.5ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."title" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:29
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:17
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/posts_controller.rb:17
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 58ms (Views: 31.0ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 00:50:51 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 45ms (Views: 29.8ms | ActiveRecord: 3.1ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2021-06-30 00:50:55 -0600
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YbSnBkXbZb5qI/sQkErqoAG/6T5z55fWLuUjpcpzOfL5nXv183OkSBtKan4vP50LoGyRLYHHoVjqV9TjwZPSPw==", "post"=>{"title"=>"test", "body"=>"test", "topic"=>"newtopic"}, "commit"=>"Create Post"}
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 1.8ms)
+
+
+  
+ActiveRecord::StatementInvalid (PG::UndefinedColumn: ERROR:  column topics.topics does not exist
+LINE 1: SELECT  "topics".* FROM "topics" WHERE "topics"."topics" IS ...
+                                               ^
+: SELECT  "topics".* FROM "topics" WHERE "topics"."topics" IS NULL LIMIT $1):
+  
+app/controllers/posts_controller.rb:29:in `post_params'
+app/controllers/posts_controller.rb:16:in `create'
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 00:51:10 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 91ms (Views: 61.8ms | ActiveRecord: 7.0ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2021-06-30 00:51:15 -0600
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1i2plU6DCcR8zQX+ZcYWlGf8t0Ash6DXzNrNBYKVWEIjRlNCCVNFcWBLxLZA7geYgqOPHnAQ20zilyz0lWzF3g==", "post"=>{"title"=>"test", "body"=>"test", "topic"=>"newtopic"}, "commit"=>"Create Post"}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 1.4ms)
+
+
+  
+ActiveRecord::StatementInvalid (PG::UndefinedColumn: ERROR:  column topics.topic does not exist
+LINE 1: SELECT  "topics".* FROM "topics" WHERE "topics"."topic" IS N...
+                                               ^
+: SELECT  "topics".* FROM "topics" WHERE "topics"."topic" IS NULL LIMIT $1):
+  
+app/controllers/posts_controller.rb:29:in `post_params'
+app/controllers/posts_controller.rb:16:in `create'
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 00:51:39 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 74ms (Views: 48.5ms | ActiveRecord: 4.0ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2021-06-30 00:51:46 -0600
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"s5WU+il0K1pcHFtekghJOzCfjbqYgYxK2+fp8yWe6e9G/m4tbqRn70Camha3IFg31cC15MQW99H1qggCMmd0cw==", "post"=>{"title"=>"testss", "body"=>"testssss", "topic"=>"newtopic"}, "commit"=>"Create Post"}
+  [1m[36mTopic Load (0.3ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."title" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:29
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:17
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/posts_controller.rb:17
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 49ms (Views: 31.2ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 00:52:33 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 43ms (Views: 24.6ms | ActiveRecord: 5.7ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2021-06-30 00:52:39 -0600
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"O4CSDbMxw03zAScB+ekg1enoOi33CJ2Q1iRO2JMOxYWjqU7+BZkCu4Jotm9GnFd+SDtCPgUoqx4SlrmemO4uSA==", "post"=>{"title"=>"testasdf", "body"=>"asdf", "topic"=>"newtopic"}, "commit"=>"Create Post"}
+  [1m[36mTopic Load (0.3ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."title" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:29
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:17
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/posts_controller.rb:17
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 76ms (Views: 56.1ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 00:53:03 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 43ms (Views: 26.6ms | ActiveRecord: 4.8ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2021-06-30 00:53:08 -0600
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hOt8klt6soR8hGqcQ1kJedOa1uy0nH0ekcRDe+tANR4cwqBh7dJzcg3t+/L8LH7Sckmu/0a8S5BVdrQ94KDe0w==", "post"=>{"title"=>"test", "body"=>"test", "topic"=>"newtopic"}, "commit"=>"Create Post"}
+  [1m[36mTopic Load (0.4ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."title" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:29
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:17
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/posts_controller.rb:17
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 49ms (Views: 27.1ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 00:54:22 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 44ms (Views: 28.7ms | ActiveRecord: 4.8ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2021-06-30 00:54:26 -0600
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"L9MZ/Hza0VN7ptg7O/U+oFPPURwvtjSSwUy9vRy846K3+sUPynIQpQrPSVWEgEkL8hwpD92WAhwF/kr7F1wIbw==", "post"=>{"title"=>"test", "body"=>"test", "topic"=>"newtopic"}, "commit"=>"Create Post"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveRecord::AssociationTypeMismatch (Topic(#69957011723760) expected, got "newtopic" which is an instance of String(#46948603928040)):
+  
+app/controllers/posts_controller.rb:16:in `create'
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 00:55:35 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 45ms (Views: 27.8ms | ActiveRecord: 5.6ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2021-06-30 00:55:41 -0600
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Q/HGlMr+MPxv0+tYkFMOgiN7b9+ThDfGVWOuop0aMvu2mjxDjS58SXNVKhC1ex+OxiRXgc8TTF17Lk9TiuOvZw==", "post"=>{"title"=>"tests", "body"=>"test", "topic"=>"newtopic"}, "commit"=>"Create Post"}
+  [1m[36mTopic Load (0.3ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."title" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:28
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 1.6ms)
+
+
+  
+ActiveRecord::AssociationTypeMismatch (Topic(#69956899407820) expected, got "newtopic" which is an instance of String(#46948603928040)):
+  
+app/controllers/posts_controller.rb:16:in `create'
+Started GET "/" for 127.0.0.1 at 2021-06-30 01:02:13 -0600
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 232ms (Views: 225.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/topics" for 127.0.0.1 at 2021-06-30 01:02:15 -0600
+Processing by TopicsController#index as HTML
+  Rendering topics/index.html.erb within layouts/application
+  Rendered topics/index.html.erb within layouts/application (3.7ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <h1>Browse All Topics</h1>
+    2: 
+    3: <ul>
+    4:   <% @topics.each do |topic| %>
+    5:     <li>
+    6:       <%= topic.title %>
+    7:     </li>
+  
+app/views/topics/index.html.erb:4:in `_app_views_topics_index_html_erb___860707572134225238_69977164202800'
+Started GET "/" for 127.0.0.1 at 2021-06-30 01:02:47 -0600
+Processing by SessionsController#welcome as HTML
+  Rendering sessions/welcome.html.erb within layouts/application
+  Rendered sessions/welcome.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 33ms (Views: 31.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/comments" for 127.0.0.1 at 2021-06-30 01:02:49 -0600
+Processing by CommentsController#index as HTML
+  Rendering comments/index.html.erb within layouts/application
+  Rendered comments/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 34ms (Views: 29.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/topics" for 127.0.0.1 at 2021-06-30 01:02:50 -0600
+Processing by TopicsController#index as HTML
+  Rendering topics/index.html.erb within layouts/application
+  [1m[36mTopic Load (0.8ms)[0m  [1m[34mSELECT "topics".* FROM "topics"[0m
+  ↳ app/views/topics/index.html.erb:4
+  Rendered topics/index.html.erb within layouts/application (16.7ms)
+Completed 200 OK in 58ms (Views: 45.8ms | ActiveRecord: 8.3ms)
+
+
+Started GET "/comments" for 127.0.0.1 at 2021-06-30 01:03:04 -0600
+Processing by CommentsController#index as HTML
+  Rendering comments/index.html.erb within layouts/application
+  Rendered comments/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 55ms (Views: 54.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/comments" for 127.0.0.1 at 2021-06-30 01:03:29 -0600
+Processing by CommentsController#index as HTML
+  Rendering comments/index.html.erb within layouts/application
+  Rendered comments/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 74ms (Views: 72.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-06-30 01:03:30 -0600
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 87ms (Views: 84.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-06-30 01:04:59 -0600
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:4
+  Rendered posts/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 62ms (Views: 53.4ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 01:05:13 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 54ms (Views: 37.9ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-06-30 01:05:14 -0600
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:4
+  Rendered posts/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 32ms (Views: 29.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/comments" for 127.0.0.1 at 2021-06-30 01:05:15 -0600
+Processing by CommentsController#index as HTML
+  Rendering comments/index.html.erb within layouts/application
+  Rendered comments/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 29ms (Views: 25.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-06-30 01:05:50 -0600
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:4
+  Rendered posts/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 59ms (Views: 56.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/comments" for 127.0.0.1 at 2021-06-30 01:05:51 -0600
+Processing by CommentsController#index as HTML
+  Rendering comments/index.html.erb within layouts/application
+  [1m[36mComment Load (25.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+  ↳ app/views/comments/index.html.erb:4
+  Rendered comments/index.html.erb within layouts/application (49.2ms)
+Completed 200 OK in 368ms (Views: 336.6ms | ActiveRecord: 29.1ms)
+
+
+Started GET "/topics" for 127.0.0.1 at 2021-06-30 01:05:54 -0600
+Processing by TopicsController#index as HTML
+  Rendering topics/index.html.erb within layouts/application
+  [1m[36mTopic Load (0.6ms)[0m  [1m[34mSELECT "topics".* FROM "topics"[0m
+  ↳ app/views/topics/index.html.erb:4
+  Rendered topics/index.html.erb within layouts/application (14.5ms)
+Completed 200 OK in 74ms (Views: 66.7ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/topics/new" for 127.0.0.1 at 2021-06-30 01:06:41 -0600
+Processing by TopicsController#new as HTML
+  Rendering topics/new.html.erb within layouts/application
+  Rendered topics/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 28ms (Views: 26.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/topics" for 127.0.0.1 at 2021-06-30 01:06:43 -0600
+Processing by TopicsController#index as HTML
+  Rendering topics/index.html.erb within layouts/application
+  [1m[36mTopic Load (0.5ms)[0m  [1m[34mSELECT "topics".* FROM "topics"[0m
+  ↳ app/views/topics/index.html.erb:4
+  Rendered topics/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 74ms (Views: 72.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/comments" for 127.0.0.1 at 2021-06-30 01:06:47 -0600
+Processing by CommentsController#index as HTML
+  Rendering comments/index.html.erb within layouts/application
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+  ↳ app/views/comments/index.html.erb:4
+  Rendered comments/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 33ms (Views: 31.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-06-30 01:06:47 -0600
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:4
+  Rendered posts/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 51ms (Views: 49.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 01:06:48 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 32ms (Views: 30.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-06-30 01:08:53 -0600
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:4
+  Rendered posts/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 34ms (Views: 32.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 01:08:54 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mTopic Load (0.6ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."title" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  Rendered posts/new.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 50ms (Views: 47.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 01:09:12 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mTopic Load (0.4ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."title" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  Rendered posts/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 32ms (Views: 30.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 01:09:33 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mTopic Load (0.5ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."title" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  Rendered posts/new.html.erb within layouts/application (6.1ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.9ms)
+
+
+  
+ActionView::Template::Error (undefined method `map' for nil:NilClass):
+     8:     <%= f.label :body %>
+     9:     <%= f.text_area :body %>
+    10: 
+    11:     <%= f.select :topic, Topic.find_by(title: params[:topic]) %>
+    12: 
+    13: 
+    14: 
+  
+app/views/posts/new.html.erb:11:in `block in _app_views_posts_new_html_erb___2583589408372080189_69977098576080'
+app/views/posts/new.html.erb:3:in `_app_views_posts_new_html_erb___2583589408372080189_69977098576080'
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 01:10:09 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mTopic Load (0.5ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" ORDER BY "topics"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  [1m[36mTopic Load (0.4ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" ORDER BY "topics"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" ORDER BY "topics"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  Rendered posts/new.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 46ms (Views: 43.8ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2021-06-30 01:10:23 -0600
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uXT99jU7WX3TOgzjRQhkQF/iEnI7xTcob0tJ655n1HZMHwchcusVyM+8zatgIHVMur0qLGdSTLNBBqgaiZ5J6g==", "post"=>{"title"=>"test", "body"=>"test", "topic"=>"#<Topic:0x00007f49a58eb020>"}, "commit"=>"Create Post"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveRecord::AssociationTypeMismatch (Topic(#69977145708300) expected, got "#<Topic:0x00007f49a58eb020>" which is an instance of String(#47231358320120)):
+  
+app/controllers/posts_controller.rb:17:in `create'
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 01:10:34 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mTopic Load (0.3ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" ORDER BY "topics"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  [1m[36mTopic Load (0.3ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" ORDER BY "topics"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" ORDER BY "topics"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  Rendered posts/new.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 36ms (Views: 34.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 01:14:30 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/michael/code/projects/mod3/four-leaf-clovers/app/views/posts/new.html.erb:13: syntax error, unexpected tLABEL, expecting ']'
+...t :topic, [Topic.find_by title:] );@output_buffer.safe_appen...
+...                         ^~~~~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/posts/new.html.erb:24: syntax error, unexpected end, expecting ')'
+'.freeze; end 
+          ^~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/posts/new.html.erb:27: syntax error, unexpected ensure, expecting ')'
+          ensure
+          ^~~~~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/posts/new.html.erb:29: syntax error, unexpected end, expecting ')'
+          end
+          ^~~):
+  
+app/views/posts/new.html.erb:13: syntax error, unexpected tLABEL, expecting ']'
+app/views/posts/new.html.erb:24: syntax error, unexpected end, expecting ')'
+app/views/posts/new.html.erb:27: syntax error, unexpected ensure, expecting ')'
+app/views/posts/new.html.erb:29: syntax error, unexpected end, expecting ')'
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 01:14:52 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (5.4ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `find_by' for nil:NilClass):
+     8:     <%= f.label :body %>
+     9:     <%= f.text_area :body %>
+    10: 
+    11:     <%= f.select :topic, [@Topic.find_by(title: params[:topic])] %>
+    12: 
+    13: 
+    14: 
+  
+app/views/posts/new.html.erb:11:in `block in _app_views_posts_new_html_erb___2583589408372080189_69977145570640'
+app/views/posts/new.html.erb:3:in `_app_views_posts_new_html_erb___2583589408372080189_69977145570640'
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 01:18:31 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mTopic Load (0.3ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  [1m[36mTopic Load (0.3ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  Rendered posts/new.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 36ms (Views: 34.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 01:18:58 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mTopic Load (1.3ms)[0m  [1m[34mSELECT  "topic" FROM "topics" ORDER BY "topics"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  Rendered posts/new.html.erb within layouts/application (4.9ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 1.3ms)
+
+
+  
+ActionView::Template::Error (PG::UndefinedColumn: ERROR:  column "topic" does not exist
+LINE 1: SELECT  "topic" FROM "topics" ORDER BY "topics"."id" DESC LI...
+                ^
+: SELECT  "topic" FROM "topics" ORDER BY "topics"."id" DESC LIMIT $1):
+     8:     <%= f.label :body %>
+     9:     <%= f.text_area :body %>
+    10: 
+    11:     <%= f.select :topic, [Topic.select(:topic)] %>
+    12: 
+    13: 
+    14: 
+  
+app/views/posts/new.html.erb:11:in `block in _app_views_posts_new_html_erb___2583589408372080189_69977064587920'
+app/views/posts/new.html.erb:3:in `_app_views_posts_new_html_erb___2583589408372080189_69977064587920'
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 01:19:15 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mTopic Load (4.2ms)[0m  [1m[34mSELECT  "topic_title" FROM "topics" ORDER BY "topics"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  Rendered posts/new.html.erb within layouts/application (10.1ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 4.2ms)
+
+
+  
+ActionView::Template::Error (PG::UndefinedColumn: ERROR:  column "topic_title" does not exist
+LINE 1: SELECT  "topic_title" FROM "topics" ORDER BY "topics"."id" D...
+                ^
+: SELECT  "topic_title" FROM "topics" ORDER BY "topics"."id" DESC LIMIT $1):
+     8:     <%= f.label :body %>
+     9:     <%= f.text_area :body %>
+    10: 
+    11:     <%= f.select :topic, [Topic.select(:topic_title)] %>
+    12: 
+    13: 
+    14: 
+  
+app/views/posts/new.html.erb:11:in `block in _app_views_posts_new_html_erb___2583589408372080189_69977146811520'
+app/views/posts/new.html.erb:3:in `_app_views_posts_new_html_erb___2583589408372080189_69977146811520'
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 01:19:25 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mTopic Load (0.4ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  [1m[36mTopic Load (0.3ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  Rendered posts/new.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 35ms (Views: 33.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 01:20:02 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (2.4ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Unsupported argument type: Hash. Construct an Arel node instead.):
+     8:     <%= f.label :body %>
+     9:     <%= f.text_area :body %>
+    10: 
+    11:     <%= f.select :topic, [Topic.select(title: params[:topic])] %>
+    12: 
+    13: 
+    14: 
+  
+app/views/posts/new.html.erb:11:in `block in _app_views_posts_new_html_erb___2583589408372080189_69977169269760'
+app/views/posts/new.html.erb:3:in `_app_views_posts_new_html_erb___2583589408372080189_69977169269760'
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 01:20:47 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/michael/code/projects/mod3/four-leaf-clovers/app/views/posts/new.html.erb:11: syntax error, unexpected tLABEL
+...c, [Topic.select(title: params: 'topic')] );@output_buffer.s...
+...                        ^~~~~~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/posts/new.html.erb:11: syntax error, unexpected ']', expecting end
+...select(title: params: 'topic')] );@output_buffer.safe_append...
+...                              ^
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/posts/new.html.erb:20: syntax error, unexpected ensure, expecting end-of-input
+          ensure
+          ^~~~~~):
+  
+app/views/posts/new.html.erb:11: syntax error, unexpected tLABEL
+app/views/posts/new.html.erb:11: syntax error, unexpected ']', expecting end
+app/views/posts/new.html.erb:20: syntax error, unexpected ensure, expecting end-of-input
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 01:20:54 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/michael/code/projects/mod3/four-leaf-clovers/app/views/posts/new.html.erb:11: syntax error, unexpected tLABEL
+...c, [Topic.select(title: params: topic)] );@output_buffer.saf...
+...                        ^~~~~~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/posts/new.html.erb:20: syntax error, unexpected ensure, expecting end-of-input
+          ensure
+          ^~~~~~):
+  
+app/views/posts/new.html.erb:11: syntax error, unexpected tLABEL
+app/views/posts/new.html.erb:20: syntax error, unexpected ensure, expecting end-of-input
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 01:21:12 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (1.4ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/michael/code/projects/mod3/four-leaf-clovers/app/views/posts/new.html.erb:11: syntax error, unexpected ')'
+...t :topic, [Topic.select(title:)] );@output_buffer.safe_appen...
+...                              ^
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/posts/new.html.erb:17: syntax error, unexpected end, expecting ')'
+'.freeze; end 
+          ^~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/posts/new.html.erb:20: syntax error, unexpected ensure, expecting ')'
+          ensure
+          ^~~~~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/posts/new.html.erb:22: syntax error, unexpected end, expecting ')'
+          end
+          ^~~):
+  
+app/views/posts/new.html.erb:11: syntax error, unexpected ')'
+app/views/posts/new.html.erb:17: syntax error, unexpected end, expecting ')'
+app/views/posts/new.html.erb:20: syntax error, unexpected ensure, expecting ')'
+app/views/posts/new.html.erb:22: syntax error, unexpected end, expecting ')'
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 01:21:28 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mTopic Load (0.9ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  [1m[36mTopic Load (0.6ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  Rendered posts/new.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 54ms (Views: 50.2ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 01:22:58 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/michael/code/projects/mod3/four-leaf-clovers/app/views/posts/new.html.erb:24: unterminated string meets end of file
+          end
+              ^
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/posts/new.html.erb:24: syntax error, unexpected end-of-input, expecting ')'):
+  
+app/views/posts/new.html.erb:24: unterminated string meets end of file
+app/views/posts/new.html.erb:24: syntax error, unexpected end-of-input, expecting ')'
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 01:23:32 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mTopic Load (0.4ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."title" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  Rendered posts/new.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 34ms (Views: 31.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 01:24:04 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mTopic Load (0.4ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."title" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  Rendered posts/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 32ms (Views: 31.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-06-30 01:24:08 -0600
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:4
+  Rendered posts/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 37ms (Views: 35.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 01:24:10 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mTopic Load (0.5ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."title" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  Rendered posts/new.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 51ms (Views: 48.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 01:24:44 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 48ms (Views: 47.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 01:25:42 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (3.7ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `find_by' for nil:NilClass):
+     8:     <%= f.label :body %>
+     9:     <%= f.text_area :body %>
+    10: 
+    11:     <%= f.select :topic, [@topics.find_by(title: params[:topic])] %>
+    12: 
+    13: 
+    14: 
+  
+app/views/posts/new.html.erb:11:in `block in _app_views_posts_new_html_erb___2583589408372080189_69977144413380'
+app/views/posts/new.html.erb:3:in `_app_views_posts_new_html_erb___2583589408372080189_69977144413380'
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 01:26:02 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (4.7ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `all' for nil:NilClass):
+     8:     <%= f.label :body %>
+     9:     <%= f.text_area :body %>
+    10: 
+    11:     <%= f.select :topic, [@topics.all] %>
+    12: 
+    13: 
+    14: 
+  
+app/views/posts/new.html.erb:11:in `block in _app_views_posts_new_html_erb___2583589408372080189_69977098353160'
+app/views/posts/new.html.erb:3:in `_app_views_posts_new_html_erb___2583589408372080189_69977098353160'
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 01:26:16 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (230.9ms)
+Completed 500 Internal Server Error in 234ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `topics' for #<#<Class:0x00007f49a5244fa0>:0x00007f49a5760d18>
+Did you mean?  topics_url):
+     8:     <%= f.label :body %>
+     9:     <%= f.text_area :body %>
+    10: 
+    11:     <%= f.select :topic, [topics.all] %>
+    12: 
+    13: 
+    14: 
+  
+app/views/posts/new.html.erb:11:in `block in _app_views_posts_new_html_erb___2583589408372080189_69977142660780'
+app/views/posts/new.html.erb:3:in `_app_views_posts_new_html_erb___2583589408372080189_69977142660780'
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 01:26:55 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 51ms (Views: 50.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 01:27:12 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (4.9ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `index' for nil:NilClass):
+     8:     <%= f.label :body %>
+     9:     <%= f.text_area :body %>
+    10: 
+    11:     <%= f.select :topic, [@topics.index] %>
+    12: 
+    13: 
+    14: 
+  
+app/views/posts/new.html.erb:11:in `block in _app_views_posts_new_html_erb___2583589408372080189_69977064615040'
+app/views/posts/new.html.erb:3:in `_app_views_posts_new_html_erb___2583589408372080189_69977064615040'
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 01:28:26 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mTopic Load (0.5ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."title" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  Rendered posts/new.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 37ms (Views: 35.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 01:29:39 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mTopic Load (0.4ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."title" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  Rendered posts/new.html.erb within layouts/application (4.9ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (Call `select' with at least one field):
+    11:     <%= f.select :topic, [Topic.find_by(title: params[:topic])] %>
+    12: 
+    13: 
+    14: <%= f.select :topic, [Topic.select()] %>
+    15: 
+    16: 
+    17:     <%= f.submit %>
+  
+app/views/posts/new.html.erb:14:in `block in _app_views_posts_new_html_erb___2583589408372080189_69977143031620'
+app/views/posts/new.html.erb:3:in `_app_views_posts_new_html_erb___2583589408372080189_69977143031620'
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 01:30:20 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mTopic Load (0.6ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  [1m[36mTopic Load (0.7ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  Rendered posts/new.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 34ms (Views: 32.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 01:32:11 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Unsupported argument type: title (Symbol)):
+     8:     <%= f.label :body %>
+     9:     <%= f.text_area :body %>
+    10: 
+    11:     <%= f.select :topic, [Topic.where(:title)] %>
+    12: 
+    13: 
+    14:     <%= f.submit %>
+  
+app/views/posts/new.html.erb:11:in `block in _app_views_posts_new_html_erb___2583589408372080189_69977144741160'
+app/views/posts/new.html.erb:3:in `_app_views_posts_new_html_erb___2583589408372080189_69977144741160'
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 01:34:23 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/michael/code/projects/mod3/four-leaf-clovers/app/views/posts/new.html.erb:11: syntax error, unexpected tCONSTANT, expecting ']'
+...ic, [Topic.select(:title) ORDER BY :title] );@output_buffer....
+...                          ^~~~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/posts/new.html.erb:16: syntax error, unexpected end, expecting ')'
+'.freeze; end 
+          ^~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/posts/new.html.erb:19: syntax error, unexpected ensure, expecting ')'
+          ensure
+          ^~~~~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/posts/new.html.erb:21: syntax error, unexpected end, expecting ')'
+          end
+          ^~~):
+  
+app/views/posts/new.html.erb:11: syntax error, unexpected tCONSTANT, expecting ']'
+app/views/posts/new.html.erb:16: syntax error, unexpected end, expecting ')'
+app/views/posts/new.html.erb:19: syntax error, unexpected ensure, expecting ')'
+app/views/posts/new.html.erb:21: syntax error, unexpected end, expecting ')'
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 01:34:33 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mTopic Load (0.6ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  [1m[36mTopic Load (0.4ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  Rendered posts/new.html.erb within layouts/application (13.5ms)
+Completed 200 OK in 58ms (Views: 55.0ms | ActiveRecord: 1.0ms)
+
+
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(584177703887606325)[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(584177703887606325)[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/bin/rake:23
+Started GET "/posts" for 127.0.0.1 at 2021-06-30 01:41:13 -0600
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:4
+  Rendered posts/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 502ms (Views: 458.1ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 01:41:14 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (8.2ms)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 3.9ms)
+
+
+  
+SyntaxError (/home/michael/code/projects/mod3/four-leaf-clovers/app/models/topic.rb:7: syntax error, unexpected ':'
+    class Meta:
+              ^
+/home/michael/code/projects/mod3/four-leaf-clovers/app/models/topic.rb:10: syntax error, unexpected end-of-input, expecting end):
+  
+app/models/topic.rb:7: syntax error, unexpected ':'
+app/models/topic.rb:10: syntax error, unexpected end-of-input, expecting end
+app/views/posts/new.html.erb:11:in `block in _app_views_posts_new_html_erb___1469780199154403041_70321611971480'
+app/views/posts/new.html.erb:3:in `_app_views_posts_new_html_erb___1469780199154403041_70321611971480'
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 01:42:06 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mTopic Load (0.4ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  [1m[36mTopic Load (0.4ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  Rendered posts/new.html.erb within layouts/application (40.2ms)
+Completed 200 OK in 134ms (Views: 108.4ms | ActiveRecord: 10.1ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 01:42:19 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mTopic Load (0.7ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  [1m[36mTopic Load (0.3ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  Rendered posts/new.html.erb within layouts/application (23.3ms)
+Completed 200 OK in 83ms (Views: 54.1ms | ActiveRecord: 15.0ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 01:42:32 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mTopic Load (0.7ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  [1m[36mTopic Load (0.4ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  Rendered posts/new.html.erb within layouts/application (17.1ms)
+Completed 200 OK in 52ms (Views: 40.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 01:51:44 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mTopic Load (0.6ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" ORDER BY "topics"."title" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  [1m[36mTopic Load (0.5ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" ORDER BY "topics"."title" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" ORDER BY "topics"."title" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  Rendered posts/new.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 54ms (Views: 50.9ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 01:55:13 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (11.9ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 1.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `title' for #<Class:0x00007fea1095bdf0>):
+     8:     <%= f.label :body %>
+     9:     <%= f.text_area :body %>
+    10: 
+    11:     <%= f.select :topic, [Topic.select('title').from(Topic.title)] %>
+    12: 
+    13: 
+    14:     <%= f.submit %>
+  
+app/views/posts/new.html.erb:11:in `block in _app_views_posts_new_html_erb___1469780199154403041_70321609745340'
+app/views/posts/new.html.erb:3:in `_app_views_posts_new_html_erb___1469780199154403041_70321609745340'
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 01:56:10 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/michael/code/projects/mod3/four-leaf-clovers/app/views/posts/new.html.erb:11: syntax error, unexpected tIDENTIFIER, expecting ')'
+...opic, [Topic.select(:title from(Topic.title))] );@output_buf...
+...                           ^~~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/posts/new.html.erb:11: syntax error, unexpected ']', expecting end
+...lect(:title from(Topic.title))] );@output_buffer.safe_append...
+...                              ^
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/posts/new.html.erb:19: syntax error, unexpected ensure, expecting end-of-input
+          ensure
+          ^~~~~~):
+  
+app/views/posts/new.html.erb:11: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/posts/new.html.erb:11: syntax error, unexpected ']', expecting end
+app/views/posts/new.html.erb:19: syntax error, unexpected ensure, expecting end-of-input
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 01:56:48 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (126.3ms)
+Completed 500 Internal Server Error in 129ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `order' for #<ActionView::Helpers::FormBuilder:0x00007fea0d74e9e8>):
+     8:     <%= f.label :body %>
+     9:     <%= f.text_area :body %>
+    10: 
+    11:     <%= f.order :topic, [Topic.select(:title)] %>
+    12: 
+    13: 
+    14:     <%= f.submit %>
+  
+app/views/posts/new.html.erb:11:in `block in _app_views_posts_new_html_erb___1469780199154403041_70321612256960'
+app/views/posts/new.html.erb:3:in `_app_views_posts_new_html_erb___1469780199154403041_70321612256960'
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 01:57:01 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mTopic Load (0.5ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  [1m[36mTopic Load (0.5ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  Rendered posts/new.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 52ms (Views: 49.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 01:59:35 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mTopic Load (0.6ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  [1m[36mTopic Load (0.8ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  Rendered posts/new.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 73ms (Views: 70.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 01:59:46 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mTopic Load (0.5ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  [1m[36mTopic Load (0.4ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  Rendered posts/new.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 73ms (Views: 39.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/topics" for 127.0.0.1 at 2021-06-30 01:59:47 -0600
+Processing by TopicsController#index as HTML
+  Rendering topics/index.html.erb within layouts/application
+  [1m[36mTopic Load (0.4ms)[0m  [1m[34mSELECT "topics".* FROM "topics"[0m
+  ↳ app/views/topics/index.html.erb:4
+  Rendered topics/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 44ms (Views: 42.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/topics" for 127.0.0.1 at 2021-06-30 02:03:47 -0600
+Processing by TopicsController#index as HTML
+  Rendering topics/index.html.erb within layouts/application
+  [1m[36mTopic Load (0.5ms)[0m  [1m[34mSELECT "topics".* FROM "topics"[0m
+  ↳ app/views/topics/index.html.erb:4
+  Rendered topics/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 35ms (Views: 33.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 02:03:49 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mTopic Load (0.6ms)[0m  [1m[34mSELECT  "topics"."id" FROM "topics" ORDER BY "topics"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  [1m[36mTopic Load (0.4ms)[0m  [1m[34mSELECT  "topics"."id" FROM "topics" ORDER BY "topics"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics"."id" FROM "topics" ORDER BY "topics"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  Rendered posts/new.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 86ms (Views: 83.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/topics/new" for 127.0.0.1 at 2021-06-30 02:04:07 -0600
+Processing by TopicsController#new as HTML
+  Rendering topics/new.html.erb within layouts/application
+  Rendered topics/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 64ms (Views: 62.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/topics" for 127.0.0.1 at 2021-06-30 02:04:18 -0600
+Processing by TopicsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"e+nsGRw45UHNZEKefgbnlbnx1fhTmo//hie1kfAZtBfgCgYsoKB9UI9BYQrUbo4uDPl9a4udY+0pBtTtvgsUkQ==", "topic"=>{"title"=>"June Topic"}, "commit"=>"Create Topic"}
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/topics_controller.rb:14
+  [1m[36mTopic Exists (1.0ms)[0m  [1m[34mSELECT  1 AS one FROM "topics" WHERE "topics"."title" = $1 LIMIT $2[0m  [["title", "June Topic"], ["LIMIT", 1]]
+  ↳ app/controllers/topics_controller.rb:14
+  [1m[36mTopic Create (0.6ms)[0m  [1m[32mINSERT INTO "topics" ("title", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "June Topic"], ["created_at", "2021-06-30 08:04:18.516170"], ["updated_at", "2021-06-30 08:04:18.516170"]]
+  ↳ app/controllers/topics_controller.rb:14
+  [1m[35m (11.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/topics_controller.rb:14
+Redirected to http://localhost:3000/topics/7
+Completed 302 Found in 23ms (ActiveRecord: 13.8ms)
+
+
+Started GET "/topics/7" for 127.0.0.1 at 2021-06-30 02:04:18 -0600
+Processing by TopicsController#show as HTML
+  Parameters: {"id"=>"7"}
+  Rendering topics/show.html.erb within layouts/application
+  Rendered topics/show.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 71ms (Views: 68.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/topics/7" for 127.0.0.1 at 2021-06-30 02:04:44 -0600
+Processing by TopicsController#show as HTML
+  Parameters: {"id"=>"7"}
+  Rendering topics/show.html.erb within layouts/application
+  Rendered topics/show.html.erb within layouts/application (2.8ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `all' for nil:NilClass):
+    3: list of topics goes here...
+    4: 
+    5: 
+    6: <h1><% @topic.all %></h1>
+  
+app/views/topics/show.html.erb:6:in `_app_views_topics_show_html_erb__436301750793812560_70321639727060'
+Started GET "/topics/7" for 127.0.0.1 at 2021-06-30 02:04:55 -0600
+Processing by TopicsController#show as HTML
+  Parameters: {"id"=>"7"}
+  Rendering topics/show.html.erb within layouts/application
+  Rendered topics/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 37ms (Views: 35.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/topics/7" for 127.0.0.1 at 2021-06-30 02:05:56 -0600
+Processing by TopicsController#show as HTML
+  Parameters: {"id"=>"7"}
+  Rendering topics/show.html.erb within layouts/application
+  Rendered topics/show.html.erb within layouts/application (2.5ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <h1>Topics Show page</h1>
+    2: 
+    3: <% @topics.each do |topic| %>
+    4:     
+    5:   <% end %>
+  
+app/views/topics/show.html.erb:3:in `_app_views_topics_show_html_erb__436301750793812560_70321637346120'
+Started GET "/topics/7" for 127.0.0.1 at 2021-06-30 02:06:04 -0600
+Processing by TopicsController#show as HTML
+  Parameters: {"id"=>"7"}
+  Rendering topics/show.html.erb within layouts/application
+  Rendered topics/show.html.erb within layouts/application (2.8ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <h1>Topics Show page</h1>
+    2: 
+    3: <% @topics.each do |topic| %>
+    4:     <li>
+    5:       <%= topic.title %>
+    6:     </li>
+  
+app/views/topics/show.html.erb:3:in `_app_views_topics_show_html_erb__436301750793812560_70321568408720'
+Started GET "/topics/7" for 127.0.0.1 at 2021-06-30 02:06:31 -0600
+Processing by TopicsController#show as HTML
+  Parameters: {"id"=>"7"}
+  Rendering topics/show.html.erb within layouts/application
+  [1m[36mTopic Load (0.8ms)[0m  [1m[34mSELECT "topics".* FROM "topics"[0m
+  ↳ app/views/topics/show.html.erb:3
+  Rendered topics/show.html.erb within layouts/application (19.4ms)
+Completed 200 OK in 63ms (Views: 48.1ms | ActiveRecord: 9.4ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 02:07:09 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mTopic Load (0.5ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  [1m[36mTopic Load (0.5ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  Rendered posts/new.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 58ms (Views: 33.4ms | ActiveRecord: 10.9ms)
+
+
+Started GET "/comments" for 127.0.0.1 at 2021-06-30 02:07:49 -0600
+Processing by CommentsController#index as HTML
+  Rendering comments/index.html.erb within layouts/application
+  [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+  ↳ app/views/comments/index.html.erb:4
+  Rendered comments/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 63ms (Views: 53.0ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 02:07:50 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mTopic Load (0.3ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  [1m[36mTopic Load (0.3ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  Rendered posts/new.html.erb within layouts/application (16.3ms)
+Completed 200 OK in 56ms (Views: 35.5ms | ActiveRecord: 6.4ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 02:09:50 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mTopic Load (0.4ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" ORDER BY "topics"."title" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  [1m[36mTopic Load (0.6ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" ORDER BY "topics"."title" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" ORDER BY "topics"."title" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  Rendered posts/new.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 38ms (Views: 36.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 02:10:15 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mTopic Load (0.5ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" ORDER BY "topics"."title" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  [1m[36mTopic Load (0.4ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" ORDER BY "topics"."title" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" ORDER BY "topics"."title" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  Rendered posts/new.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 32ms (Views: 29.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 02:10:18 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mTopic Load (0.5ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" ORDER BY "topics"."title" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  [1m[36mTopic Load (0.5ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" ORDER BY "topics"."title" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" ORDER BY "topics"."title" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  Rendered posts/new.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 42ms (Views: 39.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 02:10:48 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (9.5ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.8ms)
+
+
+  
+ActionView::Template::Error (undefined method `list' for #<Class:0x00007fea0d673960>
+Did you mean?  last):
+     8:     <%= f.label :body %>
+     9:     <%= f.text_area :body %>
+    10: 
+    11:     <%= f.select :topic, [Topic.list(:title)] %>
+    12: 
+    13: 
+    14:     <%= f.submit %>
+  
+app/views/posts/new.html.erb:11:in `block in _app_views_posts_new_html_erb___1469780199154403041_70321639692300'
+app/views/posts/new.html.erb:3:in `_app_views_posts_new_html_erb___1469780199154403041_70321639692300'
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 02:10:59 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mTopic Load (0.3ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  Rendered posts/new.html.erb within layouts/application (5.8ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.3ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Topic with 'id'=title):
+  
+app/views/posts/new.html.erb:11:in `block in _app_views_posts_new_html_erb___1469780199154403041_70321634975840'
+app/views/posts/new.html.erb:3:in `_app_views_posts_new_html_erb___1469780199154403041_70321634975840'
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 02:11:18 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (2.1ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Unsupported argument type: title (Symbol)):
+     8:     <%= f.label :body %>
+     9:     <%= f.text_area :body %>
+    10: 
+    11:     <%= f.select :topic, [Topic.find_by(:title)] %>
+    12: 
+    13: 
+    14:     <%= f.submit %>
+  
+app/views/posts/new.html.erb:11:in `block in _app_views_posts_new_html_erb___1469780199154403041_70321566829980'
+app/views/posts/new.html.erb:3:in `_app_views_posts_new_html_erb___1469780199154403041_70321566829980'
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 02:11:38 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (2.5ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Unsupported argument type: id (Symbol)):
+     8:     <%= f.label :body %>
+     9:     <%= f.text_area :body %>
+    10: 
+    11:     <%= f.select :topic, [Topic.find_by(:id)] %>
+    12: 
+    13: 
+    14:     <%= f.submit %>
+  
+app/views/posts/new.html.erb:11:in `block in _app_views_posts_new_html_erb___1469780199154403041_70321636228940'
+app/views/posts/new.html.erb:3:in `_app_views_posts_new_html_erb___1469780199154403041_70321636228940'
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 02:11:54 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mTopic Load (0.4ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  [1m[36mTopic Load (0.5ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  Rendered posts/new.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 35ms (Views: 33.4ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2021-06-30 02:13:47 -0600
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ojxMpG9+LVAfTcf0cL4t/fx+lg299rbe937uaYbo5H9XV7ZzKK5h5QPLBrxVljzxGSGuU+FhzUXZMw+YkRF54w==", "post"=>{"title"=>"eretyerty", "body"=>"ertyerty", "topic"=>"#<Topic:0x00007fea0cab69b0>"}, "commit"=>"Create Post"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveRecord::AssociationTypeMismatch (Topic(#70321611971760) expected, got "#<Topic:0x00007fea0cab69b0>" which is an instance of String(#47056974429660)):
+  
+app/controllers/posts_controller.rb:17:in `create'
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 02:13:54 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mTopic Load (0.4ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  [1m[36mTopic Load (0.4ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  Rendered posts/new.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 29ms (Views: 26.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 02:13:59 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mTopic Load (0.4ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  [1m[36mTopic Load (0.4ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  Rendered posts/new.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 30ms (Views: 28.3ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2021-06-30 02:14:02 -0600
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Ogc+jynC+l125+TmZu+CngJYIP1lMowdp+RvYNWmabXPbMRYbhK26GphJa5Dx5OS5wcYozml94aJqY6Rwl/0KQ==", "post"=>{"title"=>"eretyerty", "body"=>"ertyerty", "topic"=>"#<Topic:0x00007fea10ab90f8>"}, "commit"=>"Create Post"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveRecord::AssociationTypeMismatch (Topic(#70321611971760) expected, got "#<Topic:0x00007fea10ab90f8>" which is an instance of String(#47056974429660)):
+  
+app/controllers/posts_controller.rb:17:in `create'
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 02:14:09 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mTopic Load (0.4ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  [1m[36mTopic Load (0.4ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  Rendered posts/new.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 33ms (Views: 30.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 02:14:31 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (127.8ms)
+Completed 500 Internal Server Error in 131ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `collection' for #<ActionView::Helpers::FormBuilder:0x00007fea104b46d0>
+Did you mean?  collection_select):
+     8:     <%= f.label :body %>
+     9:     <%= f.text_area :body %>
+    10: 
+    11:     <%= f.collection :topic, [Topic.select(:title)] %>
+    12: 
+    13: 
+    14:     <%= f.submit %>
+  
+app/views/posts/new.html.erb:11:in `block in _app_views_posts_new_html_erb___1469780199154403041_70321636191080'
+app/views/posts/new.html.erb:3:in `_app_views_posts_new_html_erb___1469780199154403041_70321636191080'
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 02:14:38 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mTopic Load (0.5ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  [1m[36mTopic Load (1.1ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  Rendered posts/new.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 34ms (Views: 31.9ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-06-30 02:14:43 -0600
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:4
+  Rendered posts/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 34ms (Views: 32.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/comments" for 127.0.0.1 at 2021-06-30 02:14:44 -0600
+Processing by CommentsController#index as HTML
+  Rendering comments/index.html.erb within layouts/application
+  [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+  ↳ app/views/comments/index.html.erb:4
+  Rendered comments/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 49ms (Views: 47.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/topics" for 127.0.0.1 at 2021-06-30 02:14:46 -0600
+Processing by TopicsController#index as HTML
+  Rendering topics/index.html.erb within layouts/application
+  [1m[36mTopic Load (0.4ms)[0m  [1m[34mSELECT "topics".* FROM "topics"[0m
+  ↳ app/views/topics/index.html.erb:4
+  Rendered topics/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 40ms (Views: 38.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-06-30 02:14:48 -0600
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:4
+  Rendered posts/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 41ms (Views: 39.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 02:14:49 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mTopic Load (0.4ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  [1m[36mTopic Load (0.3ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  Rendered posts/new.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 31ms (Views: 29.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 02:15:08 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (3.4ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (private method `select' called for nil:NilClass):
+     8:     <%= f.label :body %>
+     9:     <%= f.text_area :body %>
+    10: 
+    11:     <%= f.select :topic, [@Topic.select(:title)] %>
+    12: 
+    13: 
+    14:     <%= f.submit %>
+  
+app/views/posts/new.html.erb:11:in `block in _app_views_posts_new_html_erb___1469780199154403041_70321636036360'
+app/views/posts/new.html.erb:3:in `_app_views_posts_new_html_erb___1469780199154403041_70321636036360'
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 02:17:03 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mTopic Load (0.3ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" ORDER BY "topics"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  Rendered posts/new.html.erb within layouts/application (17.4ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (Association named 'title' was not found on Topic; perhaps you misspelled it?):
+     8:     <%= f.label :body %>
+     9:     <%= f.text_area :body %>
+    10: 
+    11:     <%= f.select :topic, [Topic.preload(:title)] %>
+    12: 
+    13: 
+    14:     <%= f.submit %>
+  
+app/views/posts/new.html.erb:11:in `block in _app_views_posts_new_html_erb___1469780199154403041_70321568122080'
+app/views/posts/new.html.erb:3:in `_app_views_posts_new_html_erb___1469780199154403041_70321568122080'
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 02:17:14 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mTopic Load (0.6ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  [1m[36mTopic Load (1.5ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  Rendered posts/new.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 49ms (Views: 45.6ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 02:18:28 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mTopic Load (0.3ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" LIMIT $1[0m  [["LIMIT", 10]]
+  ↳ app/views/posts/new.html.erb:11
+  Rendered posts/new.html.erb within layouts/application (30.1ms)
+Completed 200 OK in 57ms (Views: 55.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 02:19:59 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mTopic Load (0.6ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" ORDER BY "topics"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  Rendered posts/new.html.erb within layouts/application (6.8ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (Association named 'title' was not found on Topic; perhaps you misspelled it?):
+     8:     <%= f.label :body %>
+     9:     <%= f.text_area :body %>
+    10: 
+    11:     <%= f.select :topic, [Topic.includes(:title)] %>
+    12: 
+    13: 
+    14:     <%= f.submit %>
+  
+app/views/posts/new.html.erb:11:in `block in _app_views_posts_new_html_erb___1469780199154403041_70321612999580'
+app/views/posts/new.html.erb:3:in `_app_views_posts_new_html_erb___1469780199154403041_70321612999580'
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 02:20:25 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mTopic Load (0.4ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" ORDER BY "topics"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  Rendered posts/new.html.erb within layouts/application (5.0ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (Association named 'id' was not found on Topic; perhaps you misspelled it?):
+     8:     <%= f.label :body %>
+     9:     <%= f.text_area :body %>
+    10: 
+    11:     <%= f.select :topic, [Topic.includes(:id)] %>
+    12: 
+    13: 
+    14:     <%= f.submit %>
+  
+app/views/posts/new.html.erb:11:in `block in _app_views_posts_new_html_erb___1469780199154403041_70321604083540'
+app/views/posts/new.html.erb:3:in `_app_views_posts_new_html_erb___1469780199154403041_70321604083540'
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 02:20:32 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mTopic Load (0.5ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" ORDER BY "topics"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  Rendered posts/new.html.erb within layouts/application (3.7ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (Association named 'name' was not found on Topic; perhaps you misspelled it?):
+     8:     <%= f.label :body %>
+     9:     <%= f.text_area :body %>
+    10: 
+    11:     <%= f.select :topic, [Topic.includes(:name)] %>
+    12: 
+    13: 
+    14:     <%= f.submit %>
+  
+app/views/posts/new.html.erb:11:in `block in _app_views_posts_new_html_erb___1469780199154403041_70321640841320'
+app/views/posts/new.html.erb:3:in `_app_views_posts_new_html_erb___1469780199154403041_70321640841320'
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 02:20:44 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mTopic Load (0.5ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  [1m[36mTopic Load (0.8ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  Rendered posts/new.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 63ms (Views: 59.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 02:21:34 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (6.0ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (PG::GroupingError: ERROR:  column "topics.id" must appear in the GROUP BY clause or be used in an aggregate function
+LINE 1: SELECT  "topics".* FROM "topics" GROUP BY "topics"."title" O...
+                ^
+: SELECT  "topics".* FROM "topics" GROUP BY "topics"."title" ORDER BY "topics"."id" DESC LIMIT $1):
+     8:     <%= f.label :body %>
+     9:     <%= f.text_area :body %>
+    10: 
+    11:     <%= f.select :topic, [Topic.group(:title)] %>
+    12: 
+    13: 
+    14:     <%= f.submit %>
+  
+app/views/posts/new.html.erb:11:in `block in _app_views_posts_new_html_erb___1469780199154403041_70321567118880'
+app/views/posts/new.html.erb:3:in `_app_views_posts_new_html_erb___1469780199154403041_70321567118880'
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 02:21:58 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mTopic Load (0.5ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  [1m[36mTopic Load (0.6ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  Rendered posts/new.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 33ms (Views: 31.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 02:23:12 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (5.7ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (PG::InvalidColumnReference: ERROR:  for SELECT DISTINCT, ORDER BY expressions must appear in select list
+LINE 1: ... DISTINCT "topics"."title" FROM "topics" ORDER BY "topics"."...
+                                                             ^
+: SELECT  DISTINCT "topics"."title" FROM "topics" ORDER BY "topics"."id" DESC LIMIT $1):
+     8:     <%= f.label :body %>
+     9:     <%= f.text_area :body %>
+    10: 
+    11:     <%= f.select :topic, [Topic.select(:title).distinct] %>
+    12: 
+    13: 
+    14:     <%= f.submit %>
+  
+app/views/posts/new.html.erb:11:in `block in _app_views_posts_new_html_erb___1469780199154403041_70321567946600'
+app/views/posts/new.html.erb:3:in `_app_views_posts_new_html_erb___1469780199154403041_70321567946600'
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 02:26:20 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/michael/code/projects/mod3/four-leaf-clovers/app/views/posts/new.html.erb:18: syntax error, unexpected tIVAR, expecting ']'
+@output_buffer.safe_append='
+^~~~~~~~~~~~~~):
+  
+app/views/posts/new.html.erb:18: syntax error, unexpected tIVAR, expecting ']'
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 02:26:48 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/michael/code/projects/mod3/four-leaf-clovers/app/views/posts/new.html.erb:13: syntax error, unexpected ']'
+...opic, [@topics.each do |topic|] );@output_buffer.safe_append...
+...                              ^
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/posts/new.html.erb:18: syntax error, unexpected tIVAR, expecting ']'
+@output_buffer.safe_append='
+^~~~~~~~~~~~~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/posts/new.html.erb:22: syntax error, unexpected end, expecting ')'
+'.freeze; end 
+          ^~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/posts/new.html.erb:25: syntax error, unexpected ensure, expecting ')'
+          ensure
+          ^~~~~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/posts/new.html.erb:27: syntax error, unexpected end, expecting ')'
+          end
+          ^~~):
+  
+app/views/posts/new.html.erb:13: syntax error, unexpected ']'
+app/views/posts/new.html.erb:18: syntax error, unexpected tIVAR, expecting ']'
+app/views/posts/new.html.erb:22: syntax error, unexpected end, expecting ')'
+app/views/posts/new.html.erb:25: syntax error, unexpected ensure, expecting ')'
+app/views/posts/new.html.erb:27: syntax error, unexpected end, expecting ')'
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 02:27:24 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mTopic Load (0.5ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  [1m[36mTopic Load (0.5ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  Rendered posts/new.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 37ms (Views: 35.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 02:33:25 -0600
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mTopic Load (0.6ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  [1m[36mTopic Load (0.5ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  Rendered posts/new.html.erb within layouts/application (29.7ms)
+Completed 200 OK in 292ms (Views: 262.6ms | ActiveRecord: 11.5ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 02:33:28 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mTopic Load (0.7ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  [1m[36mTopic Load (0.4ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  Rendered posts/new.html.erb within layouts/application (12.1ms)
+Completed 200 OK in 50ms (Views: 45.8ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 02:33:50 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mTopic Load (3.6ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  [1m[36mTopic Load (2.7ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  [1m[36mCACHE Topic Load (0.6ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  [1m[36mCACHE Topic Load (0.1ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  Rendered posts/new.html.erb within layouts/application (101.9ms)
+Completed 200 OK in 191ms (Views: 168.9ms | ActiveRecord: 7.2ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2021-06-30 02:34:04 -0600
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1kP4otqmP4U4Vcp4gouJkoC4s1u1RsUMcKORyDHWL4gjKAJ1nXZzMCTTCzCno5ieZeeLBenRvpde7nA5Ji+yFA==", "post"=>{"title"=>"asdf", "body"=>"asdf", "topic"=>"#<Topic:0x00007f81459085a8>"}, "commit"=>"Create Post"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveRecord::AssociationTypeMismatch (Topic(#70096592512720) expected, got "#<Topic:0x00007f81459085a8>" which is an instance of String(#47375106883040)):
+  
+app/controllers/posts_controller.rb:17:in `create'
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 02:34:13 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mTopic Load (11.1ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  [1m[36mTopic Load (2.1ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  Rendered posts/new.html.erb within layouts/application (46.0ms)
+Completed 200 OK in 74ms (Views: 59.1ms | ActiveRecord: 13.8ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2021-06-30 02:34:19 -0600
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UEqOSF6kRPeW7GA8A0jJ33DzDJq7gASNBnpRiz6BWIWlIXSfGXQIQopqoXQmYNjTlaw0xOcXfxYoN7B6KXjFGQ==", "post"=>{"title"=>"asdf", "body"=>"asdf", "topic"=>"#<Topic:0x00007f8145e13d68>"}, "commit"=>"Create Post"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveRecord::AssociationTypeMismatch (Topic(#70096592512720) expected, got "#<Topic:0x00007f8145e13d68>" which is an instance of String(#47375106883040)):
+  
+app/controllers/posts_controller.rb:17:in `create'
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 02:34:27 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mTopic Load (0.7ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  [1m[36mTopic Load (0.7ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  [1m[36mCACHE Topic Load (0.1ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  Rendered posts/new.html.erb within layouts/application (21.7ms)
+Completed 200 OK in 73ms (Views: 69.6ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 02:35:14 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mTopic Load (0.4ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  [1m[36mTopic Load (0.3ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  Rendered posts/new.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 36ms (Views: 34.2ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2021-06-30 02:35:20 -0600
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"aim/u3hi9wEH+yubSzIcpaPmjoCM0uMbZ0itx038IfOfQkVsP7K7tBt96tNuGg2pRrm23tBFmIBJBUw2WgW8bw==", "post"=>{"title"=>"asdf", "body"=>"asdf", "topic"=>"#<Topic:0x00007f81404eaf70>"}, "commit"=>"Create Post"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveRecord::AssociationTypeMismatch (Topic(#70096592512720) expected, got "#<Topic:0x00007f81404eaf70>" which is an instance of String(#47375106883040)):
+  
+app/controllers/posts_controller.rb:17:in `create'
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 02:35:22 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mTopic Load (0.5ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  [1m[36mTopic Load (0.4ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  Rendered posts/new.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 48ms (Views: 45.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 02:35:24 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mTopic Load (0.7ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  [1m[36mTopic Load (0.6ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  Rendered posts/new.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 60ms (Views: 56.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 02:35:35 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mTopic Load (0.7ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  [1m[36mTopic Load (0.4ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  Rendered posts/new.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 69ms (Views: 65.5ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 02:35:36 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mTopic Load (1.2ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  [1m[36mTopic Load (0.4ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  Rendered posts/new.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 35ms (Views: 31.9ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 22:50:15 -0600
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mTopic Load (0.9ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  [1m[36mTopic Load (0.4ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:11
+  Rendered posts/new.html.erb within layouts/application (31.3ms)
+Completed 200 OK in 341ms (Views: 309.2ms | ActiveRecord: 10.4ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 22:50:33 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mTopic Load (0.6ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:13
+  [1m[36mTopic Load (0.6ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:13
+  [1m[36mCACHE Topic Load (0.0ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:13
+  Rendered posts/new.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 99ms (Views: 96.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 23:03:26 -0600
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/michael/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (15.2ms)
+Completed 500 Internal Server Error in 40ms (ActiveRecord: 6.2ms)
+
+
+  
+ActionView::Template::Error (Unsupported argument type: Hash. Construct an Arel node instead.):
+    10:     <%= f.text_area :body %>
+    11: <br>
+    12: <br>
+    13:     <%= f.select :topic, [Topic.select(title: params[:title])] %>
+    14: 
+    15: 
+    16:     <%= f.submit %>
+  
+app/views/posts/new.html.erb:13:in `block in _app_views_posts_new_html_erb__1821538138579942375_70160983178340'
+app/views/posts/new.html.erb:3:in `_app_views_posts_new_html_erb__1821538138579942375_70160983178340'
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 23:04:49 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mTopic Load (0.4ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."title" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:13
+  Rendered posts/new.html.erb within layouts/application (14.7ms)
+Completed 200 OK in 243ms (Views: 239.7ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 23:05:09 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mTopic Load (0.7ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" WHERE "topics"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:13
+  Rendered posts/new.html.erb within layouts/application (7.4ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 1.1ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Topic with 'id'={:title=>nil}):
+  
+app/views/posts/new.html.erb:13:in `block in _app_views_posts_new_html_erb__1821538138579942375_70161013725560'
+app/views/posts/new.html.erb:3:in `_app_views_posts_new_html_erb__1821538138579942375_70161013725560'
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 23:05:40 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (3.3ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Unsupported argument type: Hash. Construct an Arel node instead.):
+    10:     <%= f.text_area :body %>
+    11: <br>
+    12: <br>
+    13:     <%= f.select :topic, [Topic.select(title: params[:title])] %>
+    14: 
+    15: 
+    16:     <%= f.submit %>
+  
+app/views/posts/new.html.erb:13:in `block in _app_views_posts_new_html_erb__1821538138579942375_70161016945420'
+app/views/posts/new.html.erb:3:in `_app_views_posts_new_html_erb__1821538138579942375_70161016945420'
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 23:07:56 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (2.4ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Call `select' with at least one field):
+    10:     <%= f.text_area :body %>
+    11: <br>
+    12: <br>
+    13:     <%= f.select :topic, [Topic.select.with_index(title: params[:title])] %>
+    14: 
+    15: 
+    16:     <%= f.submit %>
+  
+app/views/posts/new.html.erb:13:in `block in _app_views_posts_new_html_erb__1821538138579942375_70161075990040'
+app/views/posts/new.html.erb:3:in `_app_views_posts_new_html_erb__1821538138579942375_70161075990040'
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 23:10:03 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/michael/code/projects/mod3/four-leaf-clovers/app/views/posts/new.html.erb:14: syntax error, unexpected ')', expecting ']'
+...dex { |title, idx| idx.title });@output_buffer.safe_append='
+...                              ^
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/posts/new.html.erb:19: syntax error, unexpected end, expecting ')'
+'.freeze; end 
+          ^~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/posts/new.html.erb:22: syntax error, unexpected ensure, expecting ')'
+          ensure
+          ^~~~~~
+/home/michael/code/projects/mod3/four-leaf-clovers/app/views/posts/new.html.erb:24: syntax error, unexpected end, expecting ')'
+          end
+          ^~~):
+  
+app/views/posts/new.html.erb:14: syntax error, unexpected ')', expecting ']'
+app/views/posts/new.html.erb:19: syntax error, unexpected end, expecting ')'
+app/views/posts/new.html.erb:22: syntax error, unexpected ensure, expecting ')'
+app/views/posts/new.html.erb:24: syntax error, unexpected end, expecting ')'
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 23:10:28 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (5.5ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 0, expected 1..4)):
+    10:     <%= f.text_area :body %>
+    11: <br>
+    12: <br>
+    13:     <%= f.select.with_index :topic, [Topic.select(:title)] %>
+    14: 
+    15:     <%= f.submit %>
+    16: 
+  
+app/views/posts/new.html.erb:13:in `block in _app_views_posts_new_html_erb__1821538138579942375_70161023616880'
+app/views/posts/new.html.erb:3:in `_app_views_posts_new_html_erb__1821538138579942375_70161023616880'
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-30 23:10:37 -0600
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mTopic Load (1.5ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:13
+  [1m[36mTopic Load (1.3ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:13
+  [1m[36mCACHE Topic Load (0.3ms)[0m  [1m[34mSELECT  "topics"."title" FROM "topics" ORDER BY "topics"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/views/posts/new.html.erb:13
+  Rendered posts/new.html.erb within layouts/application (253.7ms)
+Completed 200 OK in 582ms (Views: 559.0ms | ActiveRecord: 8.0ms)
+
+
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mTopic Load (0.5ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mTopic Load (0.5ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" LIMIT $1[0m  [["LIMIT", 11]]

@@ -1,1 +1,9 @@
-<h1>Comments Index Page</h1>
+<h1>Browse All Comments</h1>
+
+<ul>
+  <% @comments.each do |comment| %>
+    <li>
+      <%= comment.title %>
+    </li>
+  <% end %>
+</ul>
