@@ -13,11 +13,15 @@ class PostsController < ApplicationController
       @post = Post.new
     end
 
+    def edit
+    end
+
     def create
       @post = Post.new(post_params)
       if @post.save
         redirect_to posts_path
       else
+        flash[:error] = "Post could not be created. Please try again!"
         render :new
       end
 
@@ -26,7 +30,7 @@ class PostsController < ApplicationController
     private
 
     def post_params
-      params.require(:post).permit(:title, :body, :user_id, :topic)
+      params.require(:post).permit(:title, :body,:topic_title, :user_id)
     end
 
 end

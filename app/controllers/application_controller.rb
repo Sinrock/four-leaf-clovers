@@ -3,7 +3,7 @@ class ApplicationController < ActionController::Base
     
     include ApplicationHelper
 
-    helper_method :current_user, :logged_in? #now I can use these helper methods in the views as well, hot dog!
+    helper_method :current_user, :logged_in?, :redirect_if_not_logged_in, :can_edit  #now I can use these helper methods in the views as well, hot dog!
 
     private
     
@@ -17,5 +17,9 @@ class ApplicationController < ActionController::Base
 
     def redirect_if_not_logged_in
         redirect_to '/' if !logged_in?
+    end
+
+    def can_edit(post)
+        post.user == current_user
     end
 end

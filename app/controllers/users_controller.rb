@@ -4,10 +4,14 @@ class UsersController < ApplicationController
         @user = User.new
     end
 
+
+## Create user has a bug in creation, might be solved when you work in omniauth and other user permissions though ##
+
+
     def create
         @user = User.new(user_params)
         if @user.save
-            session[:@user.id] = @user.id
+            session[:user.id] = @user.id
             redirect_to user_path(@user)
         else
             render :new
@@ -17,7 +21,7 @@ class UsersController < ApplicationController
     def show
         redirect_if_not_logged_in
         @user = User.find_by_id(params[:id])
-        #redirect_to '/' if !@user
+        redirect_to '/' if !@user
     end
 
   private
