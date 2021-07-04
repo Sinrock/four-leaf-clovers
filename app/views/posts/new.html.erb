@@ -13,10 +13,8 @@
     <%= f.label :topic %>
     <%= f.collection_select :topic_title, Topic.all, :title, :title %>
 
-    <%= f.hidden_field :user_id, value: current_user.id %>
+    <%= f.hidden_field :user_id, value: session[:user_id] %>
 
     <%= f.submit %>
 
 <% end %>
-
-

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_07_04_072730) do
+ActiveRecord::Schema.define(version: 2021_07_04_093227) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -59,7 +59,11 @@ ActiveRecord::Schema.define(version: 2021_07_04_072730) do
     t.datetime "remember_created_at"
     t.string "provider"
     t.string "uid"
+    t.string "google_token"
+    t.string "google_refresh_token"
     t.index ["email"], name: "index_users_on_email", unique: true
+    t.index ["google_refresh_token"], name: "index_users_on_google_refresh_token"
+    t.index ["google_token"], name: "index_users_on_google_token"
     t.index ["provider"], name: "index_users_on_provider"
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
     t.index ["uid"], name: "index_users_on_uid"

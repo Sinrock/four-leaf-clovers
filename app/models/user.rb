@@ -10,7 +10,7 @@ class User < ApplicationRecord
     #has_many :commented_posts, :through => :comments, source: :post
     
     
-    validates :user_name, :first_name, :last_name, :affected_person, :email, :location, presence: true
+    validates :user_name, :first_name, :last_name, :email, presence: true
     validates :email, :user_name, uniqueness: true
 
 
@@ -21,5 +21,5 @@ class User < ApplicationRecord
     end    
 
     @user = User.from_omniauth(request.env['omniauth.auth'])
-  end
+end
 end

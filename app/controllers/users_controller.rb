@@ -4,12 +4,12 @@ class UsersController < ApplicationController
         @user = User.new
     end
 
+    def index
+    end
 
 def self.from_omniauth(access_token)
     data = access_token.info
     user = User.where(email: data['email']).first
-
-    # Uncomment the section below if you want users to be created if they don't exist
      unless user
          user = User.create(name: data['name'],
             email: data['email'],
@@ -22,7 +22,7 @@ end
     def create
         @user = User.new(user_params)
         if @user.save
-            session[:user.id] = @user.id
+            session[:user] = @user.id
             redirect_to user_path(@user)
         else
             render :new
@@ -30,7 +30,7 @@ end
     end
 
     def show
-        redirect_if_not_logged_in
+        #redirect_if_not_logged_in
         @user = User.find_by_id(params[:id])
         redirect_to '/' if !@user
     end

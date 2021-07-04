@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
-  before_action :redirect_if_not_logged_in
+  #before_action :redirect_if_not_logged_in
 
     def index
       @posts = Post.all
@@ -24,13 +24,11 @@ class PostsController < ApplicationController
         flash[:error] = "Post could not be created. Please try again!"
         render :new
       end
-
     end
-
+    
     private
 
     def post_params
       params.require(:post).permit(:title, :body,:topic_title, :user_id)
     end
-
 end
