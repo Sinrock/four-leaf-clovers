@@ -3,7 +3,9 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.1'
 
-gem 'omniauth-google'
+gem 'omniauth-google-oauth2'
+gem 'omniauth'
+gem 'dotenv-rails'
 gem 'devise'
 
 gem 'mimemagic', github: 'mimemagicrb/mimemagic', ref: '01f92d86d15d85cfd0f20dabd025dcbd36a8a60f'

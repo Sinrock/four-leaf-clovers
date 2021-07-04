@@ -6,6 +6,10 @@ class ApplicationController < ActionController::Base
 
     helper_method :current_user, :logged_in?, :redirect_if_not_logged_in, :can_edit  #now I can use these helper methods in the views as well, hot dog!
 
+    def after_sign_in_path_for(resource)
+        request.env['omniauth.origin'] || root_path
+    end
+
     private
     
     def current_user

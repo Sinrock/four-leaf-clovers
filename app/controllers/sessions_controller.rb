@@ -4,11 +4,6 @@ class SessionsController < ApplicationController
     def welcome
     end
 
-    def destroy
-        session.delete(:user_id)
-        redirect_to '/'
-    end
-
     def new 
     end
 
@@ -16,8 +11,32 @@ class SessionsController < ApplicationController
         @user = User.find_or_create_from_auth_hash(auth_hash)
         self.current_user = @user
         redirect_to '/'
-      end
-    
+    end
+
+    def destroy
+        session.delete(:user_id)
+        redirect_to '/'
+    end
+
+    def googleAuth
+        @user = User.find_or_create_by(uid: auth['uid']) do |u|
+          u.name = auth['info']['name']
+          u.email = auth['info']['email']
+          access_token = auth
+          u.google_token = auth.credentials.token
+          refresh_token = auth.credentials.refresh_token
+          u.google_refresh_token = refresh_token if refresh_token.present?
+          u.password = SecureRandom.urlsafe_base64
+       end
+
+       if @user.valid?
+        session[:user_id] = @user.id
+        redirect_to user_path(@user)
+       else
+        flash[:error] = "Credentials Error"
+        redirect_to login_path
+       end
+    end
     
     #def create
     #  user = User.find_by(email: params[:user][:email])
@@ -31,9 +50,9 @@ class SessionsController < ApplicationController
     #    end
     #end
 
-    protected
+    private
 
-    def auth_hash
+    def auth
         request.env['onmiauth.auth']
     end
 end
