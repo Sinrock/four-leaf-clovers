@@ -35,7 +35,7 @@ class SessionsController < ApplicationController
     #    flash[:error] = "Credentials Error"
     #    redirect_to login_path
     #   end
-    #end
+    #end (changes added here to verify setup)
 
     def create
         @user = User.find_by_email(params[:email])
