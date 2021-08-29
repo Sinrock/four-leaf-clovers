@@ -11,7 +11,7 @@
 <br>
 <br>
     <%= f.label :topic %>
-    <%= f.collection_select :topic_title, Topic.all, :title, :title %>
+    <%= f.collection_select :topic, Topic.all, :title, :title %>
 
     <%= f.hidden_field :user_id, value: session[:user_id] %>
 
