@@ -1,6 +1,6 @@
 class SessionsController < ApplicationController
 
-    def welcome
+    def welcome#needs fixed
     end
 
     def new 
