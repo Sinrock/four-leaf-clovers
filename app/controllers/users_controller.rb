@@ -16,7 +16,6 @@ def self.from_omniauth(access_token)
             password: Devise.friendly_token[0,20]
          )
      end
-    user
 end
 
     def create
